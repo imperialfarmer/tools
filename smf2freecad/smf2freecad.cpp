@@ -1,33 +1,33 @@
-#ifndef SOLID_APPS_USER_TOPOPT_HELPER_VISUALISATION_BEAMVISUALISATION_HPP_
-#define SOLID_APPS_USER_TOPOPT_HELPER_VISUALISATION_BEAMVISUALISATION_HPP_
+#include <stdlib>
+#include <iomanip>
+#include <vector>
+#include <cstring>
+#include <iostream>
+#include <fstream>
 
-class Component{
-public:
-	Component(std::vector<int> component){component_ = component;};
-	std::vector<int> giveComponent(){return component_;};
-private:
-	std::vector<int> component_;
-};
+int main(int argc, char *argv[]){
 
-class FreeCADBall{
-public:
-	FreeCADBall(std::vector<double> centre, double radius){centre_ = centre; radius_ = radius;};
-	std::vector<double> giveCentre(){return centre_;};
-	double giveRadius(){return radius_;};
+	if(argc < 5){
+		std::cout << "Usage: ./smf2freecad <inputFolder> <cylinderRadiusFactor> <sphereRadiusFactor> <mode>" << std::endl;
+		std::cout << "      <inputFolder> put in './data/'" << std::endl;
+		std::cout << "                    geometry as 'model.smf', cylinder size as 'radius.dat'" << std::endl;
+		std::cout << "      <mode>        0 all loft, no flat edge" << std::endl;
+		std::cout << "      <mode>        1 all loft, flat edge" << std::endl;
+		std::cout << "      <mode>        2 all loft, no flat edge" << std::endl;
+	}
 
-private:
-	std::vector<double> centre_;
-	double radius_;
-};
+	std::string dir1 = argv[1];
+	std::string factorString1 = argv[2];
+	std::string factorString2 = argv[3];
+	std::string mode = argv[4];
 
-void beamVisualisationFreeCAD(std::string dir1,std::string factorString1,std::string factorString2,std::string mode){
 	const double defaultRadius = 80.;
 	const int debug = 0;
 	const double factor1 = atof(factorString1.c_str());
 	const double factor2 = atof(factorString2.c_str());
 
 
-	std::string dir = "/home/gy241/eclipse-workspace/openFTL/solid/apps/user/topOpt/apps/freeCADScript/" + dir1 + "/";
+	std::string dir = "./" + dir1 + "/";
 
 	std::string smfDir = dir + "model.smf";
 	std::string rDir = dir + "radius.dat";
@@ -158,25 +158,10 @@ void beamVisualisationFreeCAD(std::string dir1,std::string factorString1,std::st
 		double length = sqrt(gradient[0]*gradient[0] + gradient[1]*gradient[1] + gradient[2]*gradient[2]);
 		gradient[0] /= length; gradient[1] /= length; gradient[2] /= length;
 		if(mode == "0"){
-			/*if(point1[1] < 183 && point1[1] > 180)
-				sFile << "circle1 = Part.makeCircle(" << radius1*factor1 << ",Base.Vector(" << point1[0] << "," << point1[1] << "," << point1[2] <<
-				"),Base.Vector(0,1,0),0,360)" << std::endl;
-			else if(point1[1] < 3 && point1[1] > -3)
-				sFile << "circle1 = Part.makeCircle(" << radius1*factor1 << ",Base.Vector(" << point1[0] << "," << point1[1] << "," << point1[2] <<
-				"),Base.Vector(0,-1,0),0,360)" << std::endl;
-			else*/
-				sFile << "circle1 = Part.makeCircle(" << radius1*factor1 << ",Base.Vector(" << point1[0] << "," << point1[1] << "," << point1[2] <<
-				"),Base.Vector(" << gradient[0] << "," << gradient[1] << "," << gradient[2] << "),0,360)" << std::endl;
-
-			/*if(point2[1] < 183 && point2[1] > 180)
-				sFile << "circle2 = Part.makeCircle(" << radius2*factor1 << ",Base.Vector(" << point2[0] << "," << point2[1] << "," << point2[2] <<
-				"),Base.Vector(0,1,0),0,360)" << std::endl;
-			else if(point2[1] < 3 && point2[1] > -3)
-				sFile << "circle2 = Part.makeCircle(" << radius2*factor1 << ",Base.Vector(" << point2[0] << "," << point2[1] << "," << point2[2] <<
-				"),Base.Vector(0,-1,0),0,360)" << std::endl;
-			else*/
-				sFile << "circle2 = Part.makeCircle(" << radius2*factor1 << ",Base.Vector(" << point2[0] << "," << point2[1] << "," << point2[2] <<
-				"),Base.Vector(" << gradient[0] << "," << gradient[1] << "," << gradient[2] << "),0,360)" << std::endl;
+			sFile << "circle1 = Part.makeCircle(" << radius1*factor1 << ",Base.Vector(" << point1[0] << "," << point1[1] << "," << point1[2] <<
+					"),Base.Vector(" << gradient[0] << "," << gradient[1] << "," << gradient[2] << "),0,360)" << std::endl;
+			sFile << "circle2 = Part.makeCircle(" << radius2*factor1 << ",Base.Vector(" << point2[0] << "," << point2[1] << "," << point2[2] <<
+					"),Base.Vector(" << gradient[0] << "," << gradient[1] << "," << gradient[2] << "),0,360)" << std::endl;
 			sFile << "section = []" << std::endl << "section.append(circle1)" << std::endl << "section.append(circle2)" << std::endl;
 			sFile << "loft" << indexEle << " = Part.makeLoft(section,True)" << std::endl << "section.remove" << std::endl;
 			sFile << "Loft" << indexEle << " = FreeCAD.ActiveDocument.addObject(\"Part::Loft\",\"Loft" << indexEle<< "\")" << std::endl <<
@@ -225,9 +210,6 @@ void beamVisualisationFreeCAD(std::string dir1,std::string factorString1,std::st
 			sFile << "Part.show(cylinder" << indexEle << ")" << std::endl;
 			sFile << "App.getDocument(\"test\").removeObject(\"Cylinder" << indexEle << "\")" << std::endl;
 		}
-		else if(mode == "3"){
-
-		}
 	}
 
 	//second, place balls
@@ -241,15 +223,6 @@ void beamVisualisationFreeCAD(std::string dir1,std::string factorString1,std::st
 
 		sFile << "Part.show(ball" << indexBall << ")" << std::endl;
 		sFile << "App.getDocument(\"test\").removeObject(\"Sphere" << indexBall << "\")" << std::endl;
-
-		//sFile << "ball = Part.makeSphere(" << sqrt(radius/3.1415926)*factor2 << ",Base.Vector(" << centre[0] << "," << centre[1] << "," << centre[2] <<
-		//		"),Base.Vector(0,0,1),-90,90,360)" << std::endl << "Part.show(ball)" << std::endl;
-		//sFile << "App.ActiveDocument.addObject(\"Part::Sphere\",\"Sphere" << indexBall << "\")" << std::endl <<
-		//		"App.ActiveDocument.getObject(\"Sphere" << indexBall << "\").Radius = '" << sqrt(radius/3.1415926)*factor2 << "mm'" << std::endl <<
-		//		"App.ActiveDocument.getObject(\"Sphere" << indexBall << "\").Placement = App.Placement(App.Vector(" <<
-		//		centre[0] << "," << centre[1] << "," << centre[2] << "),App.Rotation(App.Vector(0,0,1),0))" << std::endl <<
-		//		"FreeCADGui.ActiveDocument.getObject(\"Sphere" << indexBall << "\").DisplayMode = \"Shaded\"" << std::endl;
-
 	}
 
 	sFile << "Gui.SendMsgToActiveView(\"ViewFit\")" << std::endl;
@@ -259,9 +232,6 @@ void beamVisualisationFreeCAD(std::string dir1,std::string factorString1,std::st
 	std::cout << "  -> Script done" << std::endl;
 	sFile.close();
 
-
-
-
+	return 0;
 }
 
-#endif /* SOLID_APPS_USER_TOPOPT_HELPER_VISUALISATION_BEAMVISUALISATION_HPP_ */
