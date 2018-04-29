@@ -1,0 +1,1456 @@
+*HEADING
+ROBOT ARM BEAM MODEL
+FILE NAME: beam**
+*PREPRINT,MODEL=NO,HISTORY=NO,ECHO=NO
+**
+*Part, name=ROBOT_ARM
+*NODE
+1, 40.5, 145.5, 157.5
+2, 70.5, 148.5, 154.5
+3, 45.75, 170.625, 151.875
+4, 58.5, 168, 135
+5, 52.5, 181.5, 133.5
+6, 40.5, 181.5, 151.5
+7, 52.5, 181.5, 145.5
+8, 52.5, 121.5, 142.5
+9, 67.5, 127.5, 154.5
+10, 61.5, 105, 153
+11, 55.5, 127.5, 133.5
+12, 58.5, 109.5, 133.5
+13, 60.375, 77.625, 67.3125
+14, 64.5, 52.5, 43.5
+15, 64.5, 28.5, 102
+16, 61.5, 79.5, 100.5
+17, 61.5, 97.5, 142.5
+18, 66, 89.25, 122.25
+19, 88.5, 181.5, 145.5
+20, 64.5, 181.5, 133.5
+21, 61.5, 22.5, 85.5
+22, 64.5, 1.5, 76.5
+23, 63.75, 65.625, 52.875
+24, 67.5, 40.5, 109.5
+25, 70.5, 100.5, 157.5
+26, 70.5, 1.5, 106.5
+27, 67.5, 75, 130.5
+28, 76.5, 138, 133.5
+29, 73.5, 1.5, 10.5
+30, 70.5, 52.5, 121.5
+31, 88.6875, 74.25, 151.969
+32, 70.5, 82.5, 136.5
+33, 74.8594, 117.516, 114.234
+34, 88.5, 136.5, 154.5
+35, 91.5, 66, 147
+36, 83.25, 97.5, 149.25
+37, 85.875, 83.625, 156.375
+38, 85.5, 115.5, 154.5
+39, 79.5, 118.5, 85.5
+40, 88.5, 145.5, 154.5
+41, 136.5, 67.5, 25.5
+42, 78, 118.5, 124.5
+43, 88.5, 118.5, 96
+44, 95.5312, 113.062, 145.383
+45, 139.5, 88.5, 16.5
+46, 100.5, 118.5, 118.5
+47, 91.5, 91.5, 154.5
+48, 88.5, 160.5, 154.5
+49, 150, 93, 66
+50, 124.5, 172.5, 151.5
+51, 104.25, 75.75, 152.25
+52, 103.5, 139.5, 154.5
+53, 76.5, 181.5, 133.5
+54, 112.5, 123, 132
+55, 139.5, 40.5, 121.5
+56, 136.5, 109.5, 133.5
+57, 141, 150, 156
+58, 115.5, 88.5, 154.5
+59, 109.5, 169.5, 145.5
+60, 97.5, 181.5, 145.5
+61, 109.5, 181.5, 136.5
+62, 138, 97.5, 129
+63, 121.5, 130.5, 133.5
+64, 117, 181.5, 147
+65, 124.5, 181.5, 139.5
+66, 136.5, 124.5, 133.5
+67, 136.5, 145.5, 133.5
+68, 130.5, 181.5, 151.5
+69, 139.5, 58.5, 118.5
+70, 139.5, 160.5, 133.5
+71, 142.5, 1.5, 112.5
+72, 150, 88.5, 76.5
+73, 145.125, 59.625, 20.25
+74, 127.5, 181.5, 133.5
+75, 142.5, 16.5, 10.5
+76, 145.5, 1.5, 25.5
+77, 142.5, 1.5, 7.5
+78, 144.375, 45.375, 17.625
+**
+** MATERIALS
+**
+*ELEMENT,ELSET=ELE1,TYPE=B31
+1,1,2
+*ELEMENT,ELSET=ELE2,TYPE=B31
+2,1,3
+*ELEMENT,ELSET=ELE3,TYPE=B31
+3,1,4
+*ELEMENT,ELSET=ELE4,TYPE=B31
+4,3,5
+*ELEMENT,ELSET=ELE5,TYPE=B31
+5,3,6
+*ELEMENT,ELSET=ELE6,TYPE=B31
+6,3,2
+*ELEMENT,ELSET=ELE7,TYPE=B31
+7,3,7
+*ELEMENT,ELSET=ELE8,TYPE=B31
+8,8,9
+*ELEMENT,ELSET=ELE9,TYPE=B31
+9,8,10
+*ELEMENT,ELSET=ELE10,TYPE=B31
+10,8,11
+*ELEMENT,ELSET=ELE11,TYPE=B31
+11,11,12
+*ELEMENT,ELSET=ELE12,TYPE=B31
+12,11,4
+*ELEMENT,ELSET=ELE13,TYPE=B31
+13,13,14
+*ELEMENT,ELSET=ELE14,TYPE=B31
+14,13,15
+*ELEMENT,ELSET=ELE15,TYPE=B31
+15,13,16
+*ELEMENT,ELSET=ELE16,TYPE=B31
+16,12,17
+*ELEMENT,ELSET=ELE17,TYPE=B31
+17,12,18
+*ELEMENT,ELSET=ELE18,TYPE=B31
+18,4,19
+*ELEMENT,ELSET=ELE19,TYPE=B31
+19,4,20
+*ELEMENT,ELSET=ELE20,TYPE=B31
+20,21,15
+*ELEMENT,ELSET=ELE21,TYPE=B31
+21,21,22
+*ELEMENT,ELSET=ELE22,TYPE=B31
+22,21,14
+*ELEMENT,ELSET=ELE23,TYPE=B31
+23,13,14
+*ELEMENT,ELSET=ELE24,TYPE=B31
+24,16,18
+*ELEMENT,ELSET=ELE25,TYPE=B31
+25,16,24
+*ELEMENT,ELSET=ELE26,TYPE=B31
+26,17,10
+*ELEMENT,ELSET=ELE27,TYPE=B31
+27,17,18
+*ELEMENT,ELSET=ELE28,TYPE=B31
+28,10,25
+*ELEMENT,ELSET=ELE29,TYPE=B31
+29,10,9
+*ELEMENT,ELSET=ELE30,TYPE=B31
+30,15,26
+*ELEMENT,ELSET=ELE31,TYPE=B31
+31,15,24
+*ELEMENT,ELSET=ELE32,TYPE=B31
+32,18,27
+*ELEMENT,ELSET=ELE33,TYPE=B31
+33,20,28
+*ELEMENT,ELSET=ELE34,TYPE=B31
+34,14,29
+*ELEMENT,ELSET=ELE35,TYPE=B31
+35,24,30
+*ELEMENT,ELSET=ELE36,TYPE=B31
+36,27,31
+*ELEMENT,ELSET=ELE37,TYPE=B31
+37,27,30
+*ELEMENT,ELSET=ELE38,TYPE=B31
+38,27,32
+*ELEMENT,ELSET=ELE39,TYPE=B31
+39,18,33
+*ELEMENT,ELSET=ELE40,TYPE=B31
+40,9,34
+*ELEMENT,ELSET=ELE41,TYPE=B31
+41,30,35
+*ELEMENT,ELSET=ELE42,TYPE=B31
+42,32,31
+*ELEMENT,ELSET=ELE43,TYPE=B31
+43,32,36
+*ELEMENT,ELSET=ELE44,TYPE=B31
+44,25,37
+*ELEMENT,ELSET=ELE45,TYPE=B31
+45,25,38
+*ELEMENT,ELSET=ELE46,TYPE=B31
+46,33,39
+*ELEMENT,ELSET=ELE47,TYPE=B31
+47,2,40
+*ELEMENT,ELSET=ELE48,TYPE=B31
+48,29,41
+*ELEMENT,ELSET=ELE49,TYPE=B31
+49,33,42
+*ELEMENT,ELSET=ELE50,TYPE=B31
+50,28,42
+*ELEMENT,ELSET=ELE51,TYPE=B31
+51,31,37
+*ELEMENT,ELSET=ELE52,TYPE=B31
+52,33,43
+*ELEMENT,ELSET=ELE53,TYPE=B31
+53,42,44
+*ELEMENT,ELSET=ELE54,TYPE=B31
+54,36,37
+*ELEMENT,ELSET=ELE55,TYPE=B31
+55,39,43
+*ELEMENT,ELSET=ELE56,TYPE=B31
+56,39,45
+*ELEMENT,ELSET=ELE57,TYPE=B31
+57,28,46
+*ELEMENT,ELSET=ELE58,TYPE=B31
+58,31,35
+*ELEMENT,ELSET=ELE59,TYPE=B31
+59,36,44
+*ELEMENT,ELSET=ELE60,TYPE=B31
+60,37,47
+*ELEMENT,ELSET=ELE61,TYPE=B31
+61,36,47
+*ELEMENT,ELSET=ELE62,TYPE=B31
+62,36,38
+*ELEMENT,ELSET=ELE63,TYPE=B31
+63,44,46
+*ELEMENT,ELSET=ELE64,TYPE=B31
+64,38,34
+*ELEMENT,ELSET=ELE65,TYPE=B31
+65,40,48
+*ELEMENT,ELSET=ELE66,TYPE=B31
+66,19,48
+*ELEMENT,ELSET=ELE67,TYPE=B31
+67,43,49
+*ELEMENT,ELSET=ELE68,TYPE=B31
+68,43,46
+*ELEMENT,ELSET=ELE69,TYPE=B31
+69,34,44
+*ELEMENT,ELSET=ELE70,TYPE=B31
+70,34,40
+*ELEMENT,ELSET=ELE71,TYPE=B31
+71,48,50
+*ELEMENT,ELSET=ELE72,TYPE=B31
+72,31,51
+*ELEMENT,ELSET=ELE73,TYPE=B31
+73,47,51
+*ELEMENT,ELSET=ELE74,TYPE=B31
+74,40,52
+*ELEMENT,ELSET=ELE75,TYPE=B31
+75,35,51
+*ELEMENT,ELSET=ELE76,TYPE=B31
+76,44,53
+*ELEMENT,ELSET=ELE77,TYPE=B31
+77,46,54
+*ELEMENT,ELSET=ELE78,TYPE=B31
+78,51,55
+*ELEMENT,ELSET=ELE79,TYPE=B31
+79,44,54
+*ELEMENT,ELSET=ELE80,TYPE=B31
+80,52,56
+*ELEMENT,ELSET=ELE81,TYPE=B31
+81,52,57
+*ELEMENT,ELSET=ELE82,TYPE=B31
+82,51,58
+*ELEMENT,ELSET=ELE83,TYPE=B31
+83,59,60
+*ELEMENT,ELSET=ELE84,TYPE=B31
+84,59,61
+*ELEMENT,ELSET=ELE85,TYPE=B31
+85,58,57
+*ELEMENT,ELSET=ELE86,TYPE=B31
+86,58,62
+*ELEMENT,ELSET=ELE87,TYPE=B31
+87,54,63
+*ELEMENT,ELSET=ELE88,TYPE=B31
+88,64,65
+*ELEMENT,ELSET=ELE89,TYPE=B31
+89,63,66
+*ELEMENT,ELSET=ELE90,TYPE=B31
+90,63,67
+*ELEMENT,ELSET=ELE91,TYPE=B31
+91,50,57
+*ELEMENT,ELSET=ELE92,TYPE=B31
+92,50,68
+*ELEMENT,ELSET=ELE93,TYPE=B31
+93,41,45
+*ELEMENT,ELSET=ELE94,TYPE=B31
+94,62,69
+*ELEMENT,ELSET=ELE95,TYPE=B31
+95,56,62
+*ELEMENT,ELSET=ELE96,TYPE=B31
+96,56,66
+*ELEMENT,ELSET=ELE97,TYPE=B31
+97,66,67
+*ELEMENT,ELSET=ELE98,TYPE=B31
+98,67,70
+*ELEMENT,ELSET=ELE99,TYPE=B31
+99,55,71
+*ELEMENT,ELSET=ELE100,TYPE=B31
+100,55,69
+*ELEMENT,ELSET=ELE101,TYPE=B31
+101,69,72
+*ELEMENT,ELSET=ELE102,TYPE=B31
+102,41,49
+*ELEMENT,ELSET=ELE103,TYPE=B31
+103,41,73
+*ELEMENT,ELSET=ELE104,TYPE=B31
+104,45,73
+*ELEMENT,ELSET=ELE105,TYPE=B31
+105,62,72
+*ELEMENT,ELSET=ELE106,TYPE=B31
+106,70,57
+*ELEMENT,ELSET=ELE107,TYPE=B31
+107,70,74
+*ELEMENT,ELSET=ELE108,TYPE=B31
+108,75,76
+*ELEMENT,ELSET=ELE109,TYPE=B31
+109,75,77
+*ELEMENT,ELSET=ELE110,TYPE=B31
+110,75,78
+*ELEMENT,ELSET=ELE111,TYPE=B31
+111,76,78
+*ELEMENT,ELSET=ELE112,TYPE=B31
+112,78,73
+*ELEMENT,ELSET=ELE113,TYPE=B31
+113,72,49
+*ELEMENT,ELSET=ELE114,TYPE=B31
+114,68,74
+*ELEMENT,ELSET=ELE115,TYPE=B31
+115,74,61
+*ELEMENT,ELSET=ELE116,TYPE=B31
+116,61,53
+*ELEMENT,ELSET=ELE117,TYPE=B31
+117,53,20
+*ELEMENT,ELSET=ELE118,TYPE=B31
+118,20,5
+*ELEMENT,ELSET=ELE119,TYPE=B31
+119,5,6
+*ELEMENT,ELSET=ELE120,TYPE=B31
+120,6,7
+*ELEMENT,ELSET=ELE121,TYPE=B31
+121,7,19
+*ELEMENT,ELSET=ELE122,TYPE=B31
+122,19,60
+*ELEMENT,ELSET=ELE123,TYPE=B31
+123,60,64
+*ELEMENT,ELSET=ELE124,TYPE=B31
+124,64,68
+*ELEMENT,ELSET=ELE125,TYPE=B31
+125,68,74
+*ELEMENT,ELSET=ELE126,TYPE=B31
+126,60,61
+*ELEMENT,ELSET=ELE127,TYPE=B31
+127,19,53
+*ELEMENT,ELSET=ELE128,TYPE=B31
+128,20,7
+*ELEMENT,ELSET=ELE129,TYPE=B31
+129,7,5
+*ELEMENT,ELSET=ELE130,TYPE=B31
+130,19,20
+*ELEMENT,ELSET=ELE131,TYPE=B31
+131,64,61
+*ELEMENT,ELSET=ELE132,TYPE=B31
+132,65,74
+*ELEMENT,ELSET=ELE133,TYPE=B31
+133,65,68
+*ELEMENT,ELSET=ELE134,TYPE=B31
+134,68,70
+*ELEMENT,ELSET=ELE135,TYPE=B31
+135,68,57
+*ELEMENT,ELSET=ELE136,TYPE=B31
+136,5,4
+*ELEMENT,ELSET=ELE137,TYPE=B31
+137,5,11
+*ELEMENT,ELSET=ELE138,TYPE=B31
+138,1,11
+*ELEMENT,ELSET=ELE139,TYPE=B31
+139,1,8
+*ELEMENT,ELSET=ELE140,TYPE=B31
+140,1,9
+*ELEMENT,ELSET=ELE141,TYPE=B31
+141,2,9
+*ELEMENT,ELSET=ELE142,TYPE=B31
+142,6,1
+*ELEMENT,ELSET=ELE143,TYPE=B31
+143,59,57
+*ELEMENT,ELSET=ELE144,TYPE=B31
+144,59,70
+*ELEMENT,ELSET=ELE145,TYPE=B31
+145,59,52
+*ELEMENT,ELSET=ELE146,TYPE=B31
+146,33,11
+*Elset, elset=WHOLE_ARM, generate
+1, 146, 1
+**
+** Section: Section_ELE1 Profile: circle1
+*Beam Section, elset=ELE1, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE2 Profile: circle2
+*Beam Section, elset=ELE2, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE3 Profile: circle3
+*Beam Section, elset=ELE3, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.70899
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE4 Profile: circle4
+*Beam Section, elset=ELE4, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE5 Profile: circle5
+*Beam Section, elset=ELE5, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+4.51222
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE6 Profile: circle6
+*Beam Section, elset=ELE6, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+4.29756
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE7 Profile: circle7
+*Beam Section, elset=ELE7, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE8 Profile: circle8
+*Beam Section, elset=ELE8, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE9 Profile: circle9
+*Beam Section, elset=ELE9, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE10 Profile: circle10
+*Beam Section, elset=ELE10, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+5.3081
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE11 Profile: circle11
+*Beam Section, elset=ELE11, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+18.2298
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE12 Profile: circle12
+*Beam Section, elset=ELE12, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+17.5988
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE13 Profile: circle13
+*Beam Section, elset=ELE13, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE14 Profile: circle14
+*Beam Section, elset=ELE14, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE15 Profile: circle15
+*Beam Section, elset=ELE15, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE16 Profile: circle16
+*Beam Section, elset=ELE16, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE17 Profile: circle17
+*Beam Section, elset=ELE17, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+16.2633
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE18 Profile: circle18
+*Beam Section, elset=ELE18, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+5.89349
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE19 Profile: circle19
+*Beam Section, elset=ELE19, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+14.7204
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE20 Profile: circle20
+*Beam Section, elset=ELE20, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE21 Profile: circle21
+*Beam Section, elset=ELE21, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE22 Profile: circle22
+*Beam Section, elset=ELE22, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE23 Profile: circle23
+*Beam Section, elset=ELE23, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE24 Profile: circle24
+*Beam Section, elset=ELE24, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE25 Profile: circle25
+*Beam Section, elset=ELE25, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE26 Profile: circle26
+*Beam Section, elset=ELE26, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE27 Profile: circle27
+*Beam Section, elset=ELE27, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE28 Profile: circle28
+*Beam Section, elset=ELE28, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE29 Profile: circle29
+*Beam Section, elset=ELE29, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE30 Profile: circle30
+*Beam Section, elset=ELE30, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+37.4463
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE31 Profile: circle31
+*Beam Section, elset=ELE31, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+34.9396
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE32 Profile: circle32
+*Beam Section, elset=ELE32, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+19.3332
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE33 Profile: circle33
+*Beam Section, elset=ELE33, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE34 Profile: circle34
+*Beam Section, elset=ELE34, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE35 Profile: circle35
+*Beam Section, elset=ELE35, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+31.8109
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE36 Profile: circle36
+*Beam Section, elset=ELE36, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE37 Profile: circle37
+*Beam Section, elset=ELE37, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+25.8383
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE38 Profile: circle38
+*Beam Section, elset=ELE38, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+19.2839
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE39 Profile: circle39
+*Beam Section, elset=ELE39, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE40 Profile: circle40
+*Beam Section, elset=ELE40, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE41 Profile: circle41
+*Beam Section, elset=ELE41, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE42 Profile: circle42
+*Beam Section, elset=ELE42, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE43 Profile: circle43
+*Beam Section, elset=ELE43, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+17.9345
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE44 Profile: circle44
+*Beam Section, elset=ELE44, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE45 Profile: circle45
+*Beam Section, elset=ELE45, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE46 Profile: circle46
+*Beam Section, elset=ELE46, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE47 Profile: circle47
+*Beam Section, elset=ELE47, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+4.67413
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE48 Profile: circle48
+*Beam Section, elset=ELE48, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE49 Profile: circle49
+*Beam Section, elset=ELE49, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE50 Profile: circle50
+*Beam Section, elset=ELE50, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE51 Profile: circle51
+*Beam Section, elset=ELE51, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE52 Profile: circle52
+*Beam Section, elset=ELE52, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE53 Profile: circle53
+*Beam Section, elset=ELE53, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE54 Profile: circle54
+*Beam Section, elset=ELE54, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE55 Profile: circle55
+*Beam Section, elset=ELE55, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE56 Profile: circle56
+*Beam Section, elset=ELE56, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE57 Profile: circle57
+*Beam Section, elset=ELE57, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE58 Profile: circle58
+*Beam Section, elset=ELE58, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE59 Profile: circle59
+*Beam Section, elset=ELE59, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+18.6957
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE60 Profile: circle60
+*Beam Section, elset=ELE60, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE61 Profile: circle61
+*Beam Section, elset=ELE61, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+7.81952
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE62 Profile: circle62
+*Beam Section, elset=ELE62, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+6.4247
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE63 Profile: circle63
+*Beam Section, elset=ELE63, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE64 Profile: circle64
+*Beam Section, elset=ELE64, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+6.44698
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE65 Profile: circle65
+*Beam Section, elset=ELE65, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+7.07639
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE66 Profile: circle66
+*Beam Section, elset=ELE66, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+5.43827
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE67 Profile: circle67
+*Beam Section, elset=ELE67, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE68 Profile: circle68
+*Beam Section, elset=ELE68, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE69 Profile: circle69
+*Beam Section, elset=ELE69, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.68912
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE70 Profile: circle70
+*Beam Section, elset=ELE70, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+7.47554
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE71 Profile: circle71
+*Beam Section, elset=ELE71, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+4.65289
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE72 Profile: circle72
+*Beam Section, elset=ELE72, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE73 Profile: circle73
+*Beam Section, elset=ELE73, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+4.50375
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE74 Profile: circle74
+*Beam Section, elset=ELE74, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+7.44277
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE75 Profile: circle75
+*Beam Section, elset=ELE75, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE76 Profile: circle76
+*Beam Section, elset=ELE76, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+8.56339
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE77 Profile: circle77
+*Beam Section, elset=ELE77, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE78 Profile: circle78
+*Beam Section, elset=ELE78, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+4.59565
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE79 Profile: circle79
+*Beam Section, elset=ELE79, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+13.0597
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE80 Profile: circle80
+*Beam Section, elset=ELE80, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+5.84005
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE81 Profile: circle81
+*Beam Section, elset=ELE81, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE82 Profile: circle82
+*Beam Section, elset=ELE82, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.40932
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE83 Profile: circle83
+*Beam Section, elset=ELE83, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+6.38833
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE84 Profile: circle84
+*Beam Section, elset=ELE84, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+6.14164
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE85 Profile: circle85
+*Beam Section, elset=ELE85, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE86 Profile: circle86
+*Beam Section, elset=ELE86, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE87 Profile: circle87
+*Beam Section, elset=ELE87, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+15.9198
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE88 Profile: circle88
+*Beam Section, elset=ELE88, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+9.18196
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE89 Profile: circle89
+*Beam Section, elset=ELE89, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+4.09034
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE90 Profile: circle90
+*Beam Section, elset=ELE90, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+16.3817
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE91 Profile: circle91
+*Beam Section, elset=ELE91, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE92 Profile: circle92
+*Beam Section, elset=ELE92, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+5.55916
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE93 Profile: circle93
+*Beam Section, elset=ELE93, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE94 Profile: circle94
+*Beam Section, elset=ELE94, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+17.2828
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE95 Profile: circle95
+*Beam Section, elset=ELE95, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+16.2935
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE96 Profile: circle96
+*Beam Section, elset=ELE96, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+17.4852
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE97 Profile: circle97
+*Beam Section, elset=ELE97, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+16.8915
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE98 Profile: circle98
+*Beam Section, elset=ELE98, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+17.292
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE99 Profile: circle99
+*Beam Section, elset=ELE99, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+20.261
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE100 Profile: circle100
+*Beam Section, elset=ELE100, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+19.0982
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE101 Profile: circle101
+*Beam Section, elset=ELE101, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE102 Profile: circle102
+*Beam Section, elset=ELE102, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE103 Profile: circle103
+*Beam Section, elset=ELE103, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE104 Profile: circle104
+*Beam Section, elset=ELE104, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE105 Profile: circle105
+*Beam Section, elset=ELE105, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE106 Profile: circle106
+*Beam Section, elset=ELE106, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE107 Profile: circle107
+*Beam Section, elset=ELE107, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+16.6479
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE108 Profile: circle108
+*Beam Section, elset=ELE108, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE109 Profile: circle109
+*Beam Section, elset=ELE109, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE110 Profile: circle110
+*Beam Section, elset=ELE110, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE111 Profile: circle111
+*Beam Section, elset=ELE111, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE112 Profile: circle112
+*Beam Section, elset=ELE112, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE113 Profile: circle113
+*Beam Section, elset=ELE113, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.74285
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE114 Profile: circle114
+*Beam Section, elset=ELE114, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE115 Profile: circle115
+*Beam Section, elset=ELE115, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+14.538
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE116 Profile: circle116
+*Beam Section, elset=ELE116, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+13.1933
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE117 Profile: circle117
+*Beam Section, elset=ELE117, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+11.0507
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE118 Profile: circle118
+*Beam Section, elset=ELE118, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+7.14321
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE119 Profile: circle119
+*Beam Section, elset=ELE119, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE120 Profile: circle120
+*Beam Section, elset=ELE120, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+10.3737
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE121 Profile: circle121
+*Beam Section, elset=ELE121, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+12.1857
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE122 Profile: circle122
+*Beam Section, elset=ELE122, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+13.3949
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE123 Profile: circle123
+*Beam Section, elset=ELE123, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+13.2034
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE124 Profile: circle124
+*Beam Section, elset=ELE124, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+9.74305
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE125 Profile: circle125
+*Beam Section, elset=ELE125, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE126 Profile: circle126
+*Beam Section, elset=ELE126, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE127 Profile: circle127
+*Beam Section, elset=ELE127, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE128 Profile: circle128
+*Beam Section, elset=ELE128, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE129 Profile: circle129
+*Beam Section, elset=ELE129, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE130 Profile: circle130
+*Beam Section, elset=ELE130, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE131 Profile: circle131
+*Beam Section, elset=ELE131, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.20908
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE132 Profile: circle132
+*Beam Section, elset=ELE132, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+9.25612
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE133 Profile: circle133
+*Beam Section, elset=ELE133, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE134 Profile: circle134
+*Beam Section, elset=ELE134, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE135 Profile: circle135
+*Beam Section, elset=ELE135, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE136 Profile: circle136
+*Beam Section, elset=ELE136, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+9.9884
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE137 Profile: circle137
+*Beam Section, elset=ELE137, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE138 Profile: circle138
+*Beam Section, elset=ELE138, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE139 Profile: circle139
+*Beam Section, elset=ELE139, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE140 Profile: circle140
+*Beam Section, elset=ELE140, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE141 Profile: circle141
+*Beam Section, elset=ELE141, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE142 Profile: circle142
+*Beam Section, elset=ELE142, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.23221
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE143 Profile: circle143
+*Beam Section, elset=ELE143, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE144 Profile: circle144
+*Beam Section, elset=ELE144, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+5.87333
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE145 Profile: circle145
+*Beam Section, elset=ELE145, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.40588
+0.123, 0.456, 0.789
+**
+** Section: Section_ELE146 Profile: circle146
+*Beam Section, elset=ELE146, material=ALUMINUM, temperature=GRADIENTS, section=CIRC
+3.2
+0.123, 0.456, 0.789
+**
+*End Part
+**
+*Assembly, name=Assembly
+**
+*Instance, name=ROBOT_ARM_1, part=ROBOT_ARM
+*End Instance
+**
+*Nset, nset=NODE1, instance=ROBOT_ARM_1
+ 1,
+*Nset, nset=NODE2, instance=ROBOT_ARM_1
+ 2,
+*Nset, nset=NODE3, instance=ROBOT_ARM_1
+ 3,
+*Nset, nset=NODE4, instance=ROBOT_ARM_1
+ 4,
+*Nset, nset=NODE5, instance=ROBOT_ARM_1
+ 5,
+*Nset, nset=NODE6, instance=ROBOT_ARM_1
+ 6,
+*Nset, nset=NODE7, instance=ROBOT_ARM_1
+ 7,
+*Nset, nset=NODE8, instance=ROBOT_ARM_1
+ 8,
+*Nset, nset=NODE9, instance=ROBOT_ARM_1
+ 9,
+*Nset, nset=NODE10, instance=ROBOT_ARM_1
+ 10,
+*Nset, nset=NODE11, instance=ROBOT_ARM_1
+ 11,
+*Nset, nset=NODE12, instance=ROBOT_ARM_1
+ 12,
+*Nset, nset=NODE13, instance=ROBOT_ARM_1
+ 13,
+*Nset, nset=NODE14, instance=ROBOT_ARM_1
+ 14,
+*Nset, nset=NODE15, instance=ROBOT_ARM_1
+ 15,
+*Nset, nset=NODE16, instance=ROBOT_ARM_1
+ 16,
+*Nset, nset=NODE17, instance=ROBOT_ARM_1
+ 17,
+*Nset, nset=NODE18, instance=ROBOT_ARM_1
+ 18,
+*Nset, nset=NODE19, instance=ROBOT_ARM_1
+ 19,
+*Nset, nset=NODE20, instance=ROBOT_ARM_1
+ 20,
+*Nset, nset=NODE21, instance=ROBOT_ARM_1
+ 21,
+*Nset, nset=NODE22, instance=ROBOT_ARM_1
+ 22,
+*Nset, nset=NODE23, instance=ROBOT_ARM_1
+ 23,
+*Nset, nset=NODE24, instance=ROBOT_ARM_1
+ 24,
+*Nset, nset=NODE25, instance=ROBOT_ARM_1
+ 25,
+*Nset, nset=NODE26, instance=ROBOT_ARM_1
+ 26,
+*Nset, nset=NODE27, instance=ROBOT_ARM_1
+ 27,
+*Nset, nset=NODE28, instance=ROBOT_ARM_1
+ 28,
+*Nset, nset=NODE29, instance=ROBOT_ARM_1
+ 29,
+*Nset, nset=NODE30, instance=ROBOT_ARM_1
+ 30,
+*Nset, nset=NODE31, instance=ROBOT_ARM_1
+ 31,
+*Nset, nset=NODE32, instance=ROBOT_ARM_1
+ 32,
+*Nset, nset=NODE33, instance=ROBOT_ARM_1
+ 33,
+*Nset, nset=NODE34, instance=ROBOT_ARM_1
+ 34,
+*Nset, nset=NODE35, instance=ROBOT_ARM_1
+ 35,
+*Nset, nset=NODE36, instance=ROBOT_ARM_1
+ 36,
+*Nset, nset=NODE37, instance=ROBOT_ARM_1
+ 37,
+*Nset, nset=NODE38, instance=ROBOT_ARM_1
+ 38,
+*Nset, nset=NODE39, instance=ROBOT_ARM_1
+ 39,
+*Nset, nset=NODE40, instance=ROBOT_ARM_1
+ 40,
+*Nset, nset=NODE41, instance=ROBOT_ARM_1
+ 41,
+*Nset, nset=NODE42, instance=ROBOT_ARM_1
+ 42,
+*Nset, nset=NODE43, instance=ROBOT_ARM_1
+ 43,
+*Nset, nset=NODE44, instance=ROBOT_ARM_1
+ 44,
+*Nset, nset=NODE45, instance=ROBOT_ARM_1
+ 45,
+*Nset, nset=NODE46, instance=ROBOT_ARM_1
+ 46,
+*Nset, nset=NODE47, instance=ROBOT_ARM_1
+ 47,
+*Nset, nset=NODE48, instance=ROBOT_ARM_1
+ 48,
+*Nset, nset=NODE49, instance=ROBOT_ARM_1
+ 49,
+*Nset, nset=NODE50, instance=ROBOT_ARM_1
+ 50,
+*Nset, nset=NODE51, instance=ROBOT_ARM_1
+ 51,
+*Nset, nset=NODE52, instance=ROBOT_ARM_1
+ 52,
+*Nset, nset=NODE53, instance=ROBOT_ARM_1
+ 53,
+*Nset, nset=NODE54, instance=ROBOT_ARM_1
+ 54,
+*Nset, nset=NODE55, instance=ROBOT_ARM_1
+ 55,
+*Nset, nset=NODE56, instance=ROBOT_ARM_1
+ 56,
+*Nset, nset=NODE57, instance=ROBOT_ARM_1
+ 57,
+*Nset, nset=NODE58, instance=ROBOT_ARM_1
+ 58,
+*Nset, nset=NODE59, instance=ROBOT_ARM_1
+ 59,
+*Nset, nset=NODE60, instance=ROBOT_ARM_1
+ 60,
+*Nset, nset=NODE61, instance=ROBOT_ARM_1
+ 61,
+*Nset, nset=NODE62, instance=ROBOT_ARM_1
+ 62,
+*Nset, nset=NODE63, instance=ROBOT_ARM_1
+ 63,
+*Nset, nset=NODE64, instance=ROBOT_ARM_1
+ 64,
+*Nset, nset=NODE65, instance=ROBOT_ARM_1
+ 65,
+*Nset, nset=NODE66, instance=ROBOT_ARM_1
+ 66,
+*Nset, nset=NODE67, instance=ROBOT_ARM_1
+ 67,
+*Nset, nset=NODE68, instance=ROBOT_ARM_1
+ 68,
+*Nset, nset=NODE69, instance=ROBOT_ARM_1
+ 69,
+*Nset, nset=NODE70, instance=ROBOT_ARM_1
+ 70,
+*Nset, nset=NODE71, instance=ROBOT_ARM_1
+ 71,
+*Nset, nset=NODE72, instance=ROBOT_ARM_1
+ 72,
+*Nset, nset=NODE73, instance=ROBOT_ARM_1
+ 73,
+*Nset, nset=NODE74, instance=ROBOT_ARM_1
+ 74,
+*Nset, nset=NODE75, instance=ROBOT_ARM_1
+ 75,
+*Nset, nset=NODE76, instance=ROBOT_ARM_1
+ 76,
+*Nset, nset=NODE77, instance=ROBOT_ARM_1
+ 77,
+*Nset, nset=NODE78, instance=ROBOT_ARM_1
+ 78,
+*End Assembly
+**
+** MATERIALS
+**
+*Material, name=ALUMINUM
+*Density
+ 0.0027,
+*Elastic
+ 75000,0.39
+**
+** BOUNDARY CONDITIONS **
+**
+** 
+** Name: BC-1 Type: Displacement/Rotation
+*Boundary
+NODE22, 1, 1
+NODE22, 2, 2
+NODE22, 3, 3
+NODE22, 4, 4
+NODE22, 5, 5
+NODE22, 6, 6
+** Name: BC-2 Type: Displacement/Rotation
+*Boundary
+NODE26, 1, 1
+NODE26, 2, 2
+NODE26, 3, 3
+NODE26, 4, 4
+NODE26, 5, 5
+NODE26, 6, 6
+** Name: BC-3 Type: Displacement/Rotation
+*Boundary
+NODE29, 1, 1
+NODE29, 2, 2
+NODE29, 3, 3
+NODE29, 4, 4
+NODE29, 5, 5
+NODE29, 6, 6
+** Name: BC-4 Type: Displacement/Rotation
+*Boundary
+NODE71, 1, 1
+NODE71, 2, 2
+NODE71, 3, 3
+NODE71, 4, 4
+NODE71, 5, 5
+NODE71, 6, 6
+** Name: BC-5 Type: Displacement/Rotation
+*Boundary
+NODE76, 1, 1
+NODE76, 2, 2
+NODE76, 3, 3
+NODE76, 4, 4
+NODE76, 5, 5
+NODE76, 6, 6
+** Name: BC-6 Type: Displacement/Rotation
+*Boundary
+NODE77, 1, 1
+NODE77, 2, 2
+NODE77, 3, 3
+NODE77, 4, 4
+NODE77, 5, 5
+NODE77, 6, 6
+** -------------------------------------------------------------------
+**
+** STEP: Step-1
+**
+*Step, name=Step-1, nlgeom=NO
+*Static
+1., 1., 1e-05, 1.
+**
+** LOADS
+**
+** Name: Load-1 Type: Concentrated force
+*Cload
+NODE5, 1, 299.129
+NODE5, 2, -383.179
+NODE5, 3, -708.177
+NODE5, 4, 0
+NODE5, 5, 0
+NODE5, 6, 0
+**
+** Name: Load-2 Type: Concentrated force
+*Cload
+NODE6, 1, -90.0112
+NODE6, 2, 285.426
+NODE6, 3, -967.603
+NODE6, 4, 0
+NODE6, 5, 0
+NODE6, 6, 0
+**
+** Name: Load-3 Type: Concentrated force
+*Cload
+NODE7, 1, 39.7022
+NODE7, 2, 44.808
+NODE7, 3, -708.177
+NODE7, 4, 0
+NODE7, 5, 0
+NODE7, 6, 0
+**
+** Name: Load-4 Type: Concentrated force
+*Cload
+NODE19, 1, 39.7022
+NODE19, 2, -35.0654
+NODE19, 3, 70.1041
+NODE19, 4, 0
+NODE19, 5, 0
+NODE19, 6, 0
+**
+** Name: Load-5 Type: Concentrated force
+*Cload
+NODE20, 1, 299.129
+NODE20, 2, -409.803
+NODE20, 3, -448.75
+NODE20, 4, 0
+NODE20, 5, 0
+NODE20, 6, 0
+**
+** Name: Load-6 Type: Concentrated force
+*Cload
+NODE53, 1, 299.129
+NODE53, 2, -436.428
+NODE53, 3, -189.323
+NODE53, 4, 0
+NODE53, 5, 0
+NODE53, 6, 0
+**
+** Name: Load-7 Type: Concentrated force
+*Cload
+NODE60, 1, 39.7022
+NODE60, 2, -55.0337
+NODE60, 3, 264.674
+NODE60, 4, 0
+NODE60, 5, 0
+NODE60, 6, 0
+**
+** Name: Load-8 Type: Concentrated force
+*Cload
+NODE61, 1, 234.272
+NODE61, 2, -402.648
+NODE61, 3, 524.101
+NODE61, 4, 0
+NODE61, 5, 0
+NODE61, 6, 0
+**
+** Name: Load-9 Type: Concentrated force
+*Cload
+NODE64, 1, 7.27388
+NODE64, 2, -44.8001
+NODE64, 3, 686.243
+NODE64, 4, 0
+NODE64, 5, 0
+NODE64, 6, 0
+**
+** Name: Load-10 Type: Concentrated force
+*Cload
+NODE65, 1, 169.416
+NODE65, 2, -328.932
+NODE65, 3, 848.385
+NODE65, 4, 0
+NODE65, 5, 0
+NODE65, 6, 0
+**
+** Name: Load-11 Type: Concentrated force
+*Cload
+NODE68, 1, -90.0112
+NODE68, 2, 85.7425
+NODE68, 3, 978.098
+NODE68, 4, 0
+NODE68, 5, 0
+NODE68, 6, 0
+**
+** Name: Load-12 Type: Concentrated force
+*Cload
+NODE74, 1, 299.129
+NODE74, 2, -549.582
+NODE74, 3, 913.241
+NODE74, 4, 0
+NODE74, 5, 0
+NODE74, 6, 0
+**
+*End Step

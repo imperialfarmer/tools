@@ -1,9 +1,31 @@
-#include <stdlib>
+#include <cstdlib>
 #include <iomanip>
 #include <vector>
 #include <cstring>
 #include <iostream>
 #include <fstream>
+#include <cmath>
+
+#define dual_line std::endl << std::endl
+
+class Component{
+public:
+	Component(std::vector<int> component){component_ = component;};
+	std::vector<int> giveComponent(){return component_;};
+private:
+	std::vector<int> component_;
+};
+
+class FreeCADBall{
+public:
+	FreeCADBall(std::vector<double> centre, double radius){centre_ = centre; radius_ = radius;};
+	std::vector<double> giveCentre(){return centre_;};
+	double giveRadius(){return radius_;};
+
+private:
+	std::vector<double> centre_;
+	double radius_;
+};
 
 int main(int argc, char *argv[]){
 
@@ -14,20 +36,24 @@ int main(int argc, char *argv[]){
 		std::cout << "      <mode>        0 all loft, no flat edge" << std::endl;
 		std::cout << "      <mode>        1 all loft, flat edge" << std::endl;
 		std::cout << "      <mode>        2 all loft, no flat edge" << std::endl;
+		exit(1);
 	}
 
+	std::cout << dual_line << " == Convert smf file of frame to freeCAD API script ==" << dual_line;
 	std::string dir1 = argv[1];
 	std::string factorString1 = argv[2];
 	std::string factorString2 = argv[3];
 	std::string mode = argv[4];
 
-	const double defaultRadius = 80.;
+	const double defaultRadius = 2.;
 	const int debug = 0;
 	const double factor1 = atof(factorString1.c_str());
 	const double factor2 = atof(factorString2.c_str());
 
 
-	std::string dir = "./" + dir1 + "/";
+	std::string dir = "./data/" + dir1 + "/";
+
+	std::cout << " -> Input model '" << dir1 << "' from " << dir << std::endl;
 
 	std::string smfDir = dir + "model.smf";
 	std::string rDir = dir + "radius.dat";
@@ -36,7 +62,7 @@ int main(int argc, char *argv[]){
 	std::string testline;
 	std::ifstream smfFile; smfFile.open(smfDir.c_str());
 	if(smfFile.fail()){
-		std::cout << "* ERROR: NO input model file" << std::endl;
+		std::cout << " * ERROR: NO input model file" << std::endl;
 		exit(1);
 	}
 
@@ -46,7 +72,7 @@ int main(int argc, char *argv[]){
 	}
 	smfFile >> testline; const int nodeNum = atof(testline.c_str());
 	smfFile >> testline; const int eleNum = atof(testline.c_str());
-	std::cout << "  * Node Number = " << nodeNum << " Element Number = " << eleNum << std::endl;
+	std::cout << "    Node number = " << nodeNum << " Element number = " << eleNum << dual_line;
 	std::vector< std::vector<double> > node(nodeNum,std::vector<double>(3));
 	if(debug == 1) std::cout << std::endl;
 	for(int indexNode = 0; indexNode < nodeNum; indexNode++){
@@ -211,6 +237,7 @@ int main(int argc, char *argv[]){
 			sFile << "App.getDocument(\"test\").removeObject(\"Cylinder" << indexEle << "\")" << std::endl;
 		}
 	}
+	std::cout << "  -> Beam data written" << std::endl;
 
 	//second, place balls
 	for(int indexBall = 0; indexBall < balls.size(); indexBall++){
@@ -228,8 +255,10 @@ int main(int argc, char *argv[]){
 	sFile << "Gui.SendMsgToActiveView(\"ViewFit\")" << std::endl;
 	sFile << std::endl;
 
+	std::cout << "  -> Sphere data written" << std::endl;
 
-	std::cout << "  -> Script done" << std::endl;
+
+	std::cout << std::endl << " == Script done ==" << std::endl << std::endl;
 	sFile.close();
 
 	return 0;

@@ -6,19 +6,21 @@ INCLUDES  =
 
 CXXFLAGS += $(INCLUDES)
 
-OBJS = smf2freecad.o
+OBJS = smf2inp.o
 
 LIBS =
 
-TARGET = smf2freecad
+TARGET = smf2inp
 
 $(TARGET): $(OBJS)
 	$(CXX) -o $(TARGET) $(OBJS) $(LIBS)
 
-smf2freecad.o : ./smf2freecad.cpp
-	$(CXX) $(CXXFLAGS) -c ./smf2freecad.cpp
+smf2freecad.o : ./smf2inp.cpp
+	$(CXX) $(CXXFLAGS) -c ./smf2inp.cpp
 
 all:    $(TARGET)
 
 clean:
 	rm -f $(OBJS) $(TARGET)
+
+

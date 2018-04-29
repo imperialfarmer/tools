@@ -1,1285 +1,1020 @@
 from FreeCAD import Base
 import Part
 App.newDocument("test")
-circle1 = Part.makeCircle(4,Base.Vector(-35.5,262.5,86.5),Base.Vector(0,0,-15),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(-35.5,262.5,71.5),Base.Vector(0,0,-15),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft0 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft0")
-loft0= Part.makeLoft(section,True)
-Loft0.Shape = loft0
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-35.5,262.5,86.5),Base.Vector(3,-21,6),0,360)
-circle2 = Part.makeCircle(4.58705,Base.Vector(-32.5,241.5,92.5),Base.Vector(3,-21,6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft1 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft1")
-loft1= Part.makeLoft(section,True)
-Loft1.Shape = loft1
-section.remove
-circle1 = Part.makeCircle(4.55966,Base.Vector(-31.75,224.25,95.5),Base.Vector(-0.75,17.25,-3),0,360)
-circle2 = Part.makeCircle(4.58705,Base.Vector(-32.5,241.5,92.5),Base.Vector(-0.75,17.25,-3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft2 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft2")
-loft2= Part.makeLoft(section,True)
-Loft2.Shape = loft2
-section.remove
-circle1 = Part.makeCircle(4.55966,Base.Vector(-31.75,224.25,95.5),Base.Vector(-3.75,38.25,-24),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(-35.5,262.5,71.5),Base.Vector(-3.75,38.25,-24),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft3 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft3")
-loft3= Part.makeLoft(section,True)
-Loft3.Shape = loft3
-section.remove
-circle1 = Part.makeCircle(4.55966,Base.Vector(-31.75,224.25,95.5),Base.Vector(5.25,-17.25,-4.5),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(-26.5,207,91),Base.Vector(5.25,-17.25,-4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft4 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft4")
-loft4= Part.makeLoft(section,True)
-Loft4.Shape = loft4
-section.remove
-circle1 = Part.makeCircle(4.58705,Base.Vector(-32.5,241.5,92.5),Base.Vector(9,6,-6),0,360)
-circle2 = Part.makeCircle(6.3477,Base.Vector(-23.5,247.5,86.5),Base.Vector(9,6,-6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft5 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft5")
-loft5= Part.makeLoft(section,True)
-Loft5.Shape = loft5
-section.remove
-circle1 = Part.makeCircle(4.55966,Base.Vector(-31.75,224.25,95.5),Base.Vector(11.25,-9.75,0),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(-20.5,214.5,95.5),Base.Vector(11.25,-9.75,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft6 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft6")
-loft6= Part.makeLoft(section,True)
-Loft6.Shape = loft6
-section.remove
-circle1 = Part.makeCircle(4.55966,Base.Vector(-31.75,224.25,95.5),Base.Vector(20.25,0.75,-4.5),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(-11.5,225,91),Base.Vector(20.25,0.75,-4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft7 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft7")
-loft7= Part.makeLoft(section,True)
-Loft7.Shape = loft7
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-26.5,207,91),Base.Vector(23.25,-8.25,1.5),0,360)
-circle2 = Part.makeCircle(5.62268,Base.Vector(-3.25,198.75,92.5),Base.Vector(23.25,-8.25,1.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft8 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft8")
-loft8= Part.makeLoft(section,True)
-Loft8.Shape = loft8
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-26.5,207,91),Base.Vector(6,4.5,-19.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-20.5,211.5,71.5),Base.Vector(6,4.5,-19.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft9 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft9")
-loft9= Part.makeLoft(section,True)
-Loft9.Shape = loft9
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-26.5,207,91),Base.Vector(6,7.5,4.5),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(-20.5,214.5,95.5),Base.Vector(6,7.5,4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft10 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft10")
-loft10= Part.makeLoft(section,True)
-Loft10.Shape = loft10
-section.remove
-circle1 = Part.makeCircle(6.3477,Base.Vector(-23.5,247.5,86.5),Base.Vector(12,-12,-6),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-11.5,235.5,80.5),Base.Vector(12,-12,-6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft11 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft11")
-loft11= Part.makeLoft(section,True)
-Loft11.Shape = loft11
-section.remove
-circle1 = Part.makeCircle(6.3477,Base.Vector(-23.5,247.5,86.5),Base.Vector(-3,15,-12),0,360)
-circle2 = Part.makeCircle(7.85803,Base.Vector(-26.5,262.5,74.5),Base.Vector(-3,15,-12),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft12 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft12")
-loft12= Part.makeLoft(section,True)
-Loft12.Shape = loft12
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-20.5,211.5,71.5),Base.Vector(9,-15,-6),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-11.5,196.5,65.5),Base.Vector(9,-15,-6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft13 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft13")
-loft13= Part.makeLoft(section,True)
-Loft13.Shape = loft13
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-20.5,211.5,71.5),Base.Vector(9,24,9),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-11.5,235.5,80.5),Base.Vector(9,24,9),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft14 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft14")
-loft14= Part.makeLoft(section,True)
-Loft14.Shape = loft14
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-20.5,214.5,95.5),Base.Vector(9,10.5,-4.5),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(-11.5,225,91),Base.Vector(9,10.5,-4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft15 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft15")
-loft15= Part.makeLoft(section,True)
-Loft15.Shape = loft15
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-17.5,121.5,32.5),Base.Vector(9.75,-7.5,17.25),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-7.75,114,49.75),Base.Vector(9.75,-7.5,17.25),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft16 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft16")
-loft16= Part.makeLoft(section,True)
-Loft16.Shape = loft16
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-17.5,121.5,32.5),Base.Vector(3,22.5,-42),0,360)
-circle2 = Part.makeCircle(8.92186,Base.Vector(-14.5,144,-9.5),Base.Vector(3,22.5,-42),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft17 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft17")
-loft17= Part.makeLoft(section,True)
-Loft17.Shape = loft17
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-17.5,121.5,32.5),Base.Vector(5.25,44.25,2.25),0,360)
-circle2 = Part.makeCircle(8.21222,Base.Vector(-12.25,165.75,34.75),Base.Vector(5.25,44.25,2.25),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft18 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft18")
-loft18= Part.makeLoft(section,True)
-Loft18.Shape = loft18
-section.remove
-circle1 = Part.makeCircle(7.76068,Base.Vector(-14.5,133.5,-18.5),Base.Vector(0,10.5,9),0,360)
-circle2 = Part.makeCircle(8.92186,Base.Vector(-14.5,144,-9.5),Base.Vector(0,10.5,9),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft19 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft19")
-loft19= Part.makeLoft(section,True)
-Loft19.Shape = loft19
-section.remove
-circle1 = Part.makeCircle(7.76068,Base.Vector(-14.5,133.5,-18.5),Base.Vector(3,-36,-24),0,360)
-circle2 = Part.makeCircle(9.99705,Base.Vector(-11.5,97.5,-42.5),Base.Vector(3,-36,-24),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft20 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft20")
-loft20= Part.makeLoft(section,True)
-Loft20.Shape = loft20
-section.remove
-circle1 = Part.makeCircle(7.76068,Base.Vector(-14.5,133.5,-18.5),Base.Vector(0,10.5,-15.75),0,360)
-circle2 = Part.makeCircle(4.35996,Base.Vector(-14.5,144,-34.25),Base.Vector(0,10.5,-15.75),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft21 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft21")
-loft21= Part.makeLoft(section,True)
-Loft21.Shape = loft21
-section.remove
-circle1 = Part.makeCircle(4.35996,Base.Vector(-14.5,144,-34.25),Base.Vector(27,-28.5,-11.25),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(12.5,115.5,-45.5),Base.Vector(27,-28.5,-11.25),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft22 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft22")
-loft22= Part.makeLoft(section,True)
-Loft22.Shape = loft22
-section.remove
-circle1 = Part.makeCircle(4.35996,Base.Vector(-14.5,144,-34.25),Base.Vector(0,15,-2.25),0,360)
-circle2 = Part.makeCircle(4.35996,Base.Vector(-14.5,159,-36.5),Base.Vector(0,15,-2.25),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft23 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft23")
-loft23= Part.makeLoft(section,True)
-Loft23.Shape = loft23
-section.remove
-circle1 = Part.makeCircle(8.92186,Base.Vector(-14.5,144,-9.5),Base.Vector(0,22.5,24),0,360)
-circle2 = Part.makeCircle(8.92186,Base.Vector(-14.5,166.5,14.5),Base.Vector(0,22.5,24),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft24 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft24")
-loft24= Part.makeLoft(section,True)
-Loft24.Shape = loft24
-section.remove
-circle1 = Part.makeCircle(8.92186,Base.Vector(-14.5,166.5,14.5),Base.Vector(2.25,-0.75,20.25),0,360)
-circle2 = Part.makeCircle(8.21222,Base.Vector(-12.25,165.75,34.75),Base.Vector(2.25,-0.75,20.25),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft25 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft25")
-loft25= Part.makeLoft(section,True)
-Loft25.Shape = loft25
-section.remove
-circle1 = Part.makeCircle(8.92186,Base.Vector(-14.5,166.5,14.5),Base.Vector(12,28.5,-9),0,360)
-circle2 = Part.makeCircle(7.52885,Base.Vector(-2.5,195,5.5),Base.Vector(12,28.5,-9),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft26 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft26")
-loft26= Part.makeLoft(section,True)
-Loft26.Shape = loft26
-section.remove
-circle1 = Part.makeCircle(8.21222,Base.Vector(-12.25,165.75,34.75),Base.Vector(9.75,29.25,-29.25),0,360)
-circle2 = Part.makeCircle(7.52885,Base.Vector(-2.5,195,5.5),Base.Vector(9.75,29.25,-29.25),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft27 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft27")
-loft27= Part.makeLoft(section,True)
-Loft27.Shape = loft27
-section.remove
-circle1 = Part.makeCircle(9.99705,Base.Vector(-11.5,97.5,-42.5),Base.Vector(-3,-15,-3),0,360)
-circle2 = Part.makeCircle(9.99705,Base.Vector(-14.5,82.5,-45.5),Base.Vector(-3,-15,-3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft28 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft28")
-loft28= Part.makeLoft(section,True)
-Loft28.Shape = loft28
-section.remove
-circle1 = Part.makeCircle(9.99705,Base.Vector(-11.5,97.5,-42.5),Base.Vector(24,18,-3),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(12.5,115.5,-45.5),Base.Vector(24,18,-3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft29 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft29")
-loft29= Part.makeLoft(section,True)
-Loft29.Shape = loft29
-section.remove
-circle1 = Part.makeCircle(8.21222,Base.Vector(-12.25,165.75,34.75),Base.Vector(0.75,-2.25,18.75),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-11.5,163.5,53.5),Base.Vector(0.75,-2.25,18.75),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft30 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft30")
-loft30= Part.makeLoft(section,True)
-Loft30.Shape = loft30
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-11.5,163.5,53.5),Base.Vector(3,-33,3),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-8.5,130.5,56.5),Base.Vector(3,-33,3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft31 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft31")
-loft31= Part.makeLoft(section,True)
-Loft31.Shape = loft31
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-11.5,163.5,53.5),Base.Vector(6,18,16.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-5.5,181.5,70),Base.Vector(6,18,16.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft32 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft32")
-loft32= Part.makeLoft(section,True)
-Loft32.Shape = loft32
-section.remove
-circle1 = Part.makeCircle(4.35996,Base.Vector(-14.5,159,-36.5),Base.Vector(37.5,36,4.5),0,360)
-circle2 = Part.makeCircle(5.10432,Base.Vector(23,195,-32),Base.Vector(37.5,36,4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft33 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft33")
-loft33= Part.makeLoft(section,True)
-Loft33.Shape = loft33
-section.remove
-circle1 = Part.makeCircle(8.21222,Base.Vector(-12.25,165.75,34.75),Base.Vector(12.75,32.25,0.75),0,360)
-circle2 = Part.makeCircle(6.87477,Base.Vector(0.5,198,35.5),Base.Vector(12.75,32.25,0.75),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft34 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft34")
-loft34= Part.makeLoft(section,True)
-Loft34.Shape = loft34
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-11.5,196.5,65.5),Base.Vector(27,3.75,-25.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(15.5,200.25,40),Base.Vector(27,3.75,-25.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft35 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft35")
-loft35= Part.makeLoft(section,True)
-Loft35.Shape = loft35
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-11.5,225,91),Base.Vector(8.25,-26.25,1.5),0,360)
-circle2 = Part.makeCircle(5.62268,Base.Vector(-3.25,198.75,92.5),Base.Vector(8.25,-26.25,1.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft36 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft36")
-loft36= Part.makeLoft(section,True)
-Loft36.Shape = loft36
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-11.5,225,91),Base.Vector(0,10.5,-10.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-11.5,235.5,80.5),Base.Vector(0,10.5,-10.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft37 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft37")
-loft37= Part.makeLoft(section,True)
-Loft37.Shape = loft37
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-11.5,235.5,80.5),Base.Vector(0,27,-6),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-11.5,262.5,74.5),Base.Vector(0,27,-6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft38 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft38")
-loft38= Part.makeLoft(section,True)
-Loft38.Shape = loft38
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-7.75,114,49.75),Base.Vector(-0.75,16.5,6.75),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-8.5,130.5,56.5),Base.Vector(-0.75,16.5,6.75),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft39 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft39")
-loft39= Part.makeLoft(section,True)
-Loft39.Shape = loft39
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-8.5,130.5,56.5),Base.Vector(33,-18,0),0,360)
-circle2 = Part.makeCircle(5.8377,Base.Vector(24.5,112.5,56.5),Base.Vector(33,-18,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft40 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft40")
-loft40= Part.makeLoft(section,True)
-Loft40.Shape = loft40
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-7.75,114,49.75),Base.Vector(5.25,-10.5,3.75),0,360)
-circle2 = Part.makeCircle(9.97843,Base.Vector(-2.5,103.5,53.5),Base.Vector(5.25,-10.5,3.75),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft41 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft41")
-loft41= Part.makeLoft(section,True)
-Loft41.Shape = loft41
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-5.5,181.5,70),Base.Vector(15,18,-7.5),0,360)
-circle2 = Part.makeCircle(4.64611,Base.Vector(9.5,199.5,62.5),Base.Vector(15,18,-7.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft42 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft42")
-loft42= Part.makeLoft(section,True)
-Loft42.Shape = loft42
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-5.5,181.5,70),Base.Vector(9,3,18),0,360)
-circle2 = Part.makeCircle(5.86684,Base.Vector(3.5,184.5,88),Base.Vector(9,3,18),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft43 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft43")
-loft43= Part.makeLoft(section,True)
-Loft43.Shape = loft43
-section.remove
-circle1 = Part.makeCircle(9.97843,Base.Vector(-2.5,103.5,53.5),Base.Vector(27,9,3),0,360)
-circle2 = Part.makeCircle(5.8377,Base.Vector(24.5,112.5,56.5),Base.Vector(27,9,3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft44 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft44")
-loft44= Part.makeLoft(section,True)
-Loft44.Shape = loft44
-section.remove
-circle1 = Part.makeCircle(9.97843,Base.Vector(-2.5,103.5,53.5),Base.Vector(-6,-21,-9),0,360)
-circle2 = Part.makeCircle(9.29645,Base.Vector(-8.5,82.5,44.5),Base.Vector(-6,-21,-9),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft45 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft45")
-loft45= Part.makeLoft(section,True)
-Loft45.Shape = loft45
-section.remove
-circle1 = Part.makeCircle(7.52885,Base.Vector(-2.5,195,5.5),Base.Vector(25.5,0,-37.5),0,360)
-circle2 = Part.makeCircle(5.10432,Base.Vector(23,195,-32),Base.Vector(25.5,0,-37.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft46 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft46")
-loft46= Part.makeLoft(section,True)
-Loft46.Shape = loft46
-section.remove
-circle1 = Part.makeCircle(5.62268,Base.Vector(-3.25,198.75,92.5),Base.Vector(6.75,-14.25,-4.5),0,360)
-circle2 = Part.makeCircle(5.86684,Base.Vector(3.5,184.5,88),Base.Vector(6.75,-14.25,-4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft47 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft47")
-loft47= Part.makeLoft(section,True)
-Loft47.Shape = loft47
-section.remove
-circle1 = Part.makeCircle(5.62268,Base.Vector(-3.25,198.75,92.5),Base.Vector(21.75,30.75,-19.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(18.5,229.5,73),Base.Vector(21.75,30.75,-19.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft48 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft48")
-loft48= Part.makeLoft(section,True)
-Loft48.Shape = loft48
-section.remove
-circle1 = Part.makeCircle(7.52885,Base.Vector(-2.5,195,5.5),Base.Vector(17.25,4.5,13.875),0,360)
-circle2 = Part.makeCircle(7.95985,Base.Vector(14.75,199.5,19.375),Base.Vector(17.25,4.5,13.875),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft49 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft49")
-loft49= Part.makeLoft(section,True)
-Loft49.Shape = loft49
-section.remove
-circle1 = Part.makeCircle(6.87477,Base.Vector(0.5,198,35.5),Base.Vector(15,2.25,4.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(15.5,200.25,40),Base.Vector(15,2.25,4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft50 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft50")
-loft50= Part.makeLoft(section,True)
-Loft50.Shape = loft50
-section.remove
-circle1 = Part.makeCircle(5.62268,Base.Vector(-3.25,198.75,92.5),Base.Vector(15.75,18.75,0),0,360)
-circle2 = Part.makeCircle(4.48275,Base.Vector(12.5,217.5,92.5),Base.Vector(15.75,18.75,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft51 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft51")
-loft51= Part.makeLoft(section,True)
-Loft51.Shape = loft51
-section.remove
-circle1 = Part.makeCircle(6.87477,Base.Vector(0.5,198,35.5),Base.Vector(14.25,1.5,-16.125),0,360)
-circle2 = Part.makeCircle(7.95985,Base.Vector(14.75,199.5,19.375),Base.Vector(14.25,1.5,-16.125),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft52 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft52")
-loft52= Part.makeLoft(section,True)
-Loft52.Shape = loft52
-section.remove
-circle1 = Part.makeCircle(5.86684,Base.Vector(3.5,184.5,88),Base.Vector(27,15,-28.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(30.5,199.5,59.5),Base.Vector(27,15,-28.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft53 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft53")
-loft53= Part.makeLoft(section,True)
-Loft53.Shape = loft53
-section.remove
-circle1 = Part.makeCircle(5.86684,Base.Vector(3.5,184.5,88),Base.Vector(6,15,-25.5),0,360)
-circle2 = Part.makeCircle(4.64611,Base.Vector(9.5,199.5,62.5),Base.Vector(6,15,-25.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft54 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft54")
-loft54= Part.makeLoft(section,True)
-Loft54.Shape = loft54
-section.remove
-circle1 = Part.makeCircle(4.64611,Base.Vector(9.5,199.5,62.5),Base.Vector(21,24,9),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(30.5,223.5,71.5),Base.Vector(21,24,9),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft55 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft55")
-loft55= Part.makeLoft(section,True)
-Loft55.Shape = loft55
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(12.5,115.5,-45.5),Base.Vector(49.5,37.5,-3),0,360)
-circle2 = Part.makeCircle(4.85043,Base.Vector(62,153,-48.5),Base.Vector(49.5,37.5,-3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft56 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft56")
-loft56= Part.makeLoft(section,True)
-Loft56.Shape = loft56
-section.remove
-circle1 = Part.makeCircle(4.48275,Base.Vector(12.5,217.5,92.5),Base.Vector(12,6,0),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(24.5,223.5,92.5),Base.Vector(12,6,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft57 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft57")
-loft57= Part.makeLoft(section,True)
-Loft57.Shape = loft57
-section.remove
-circle1 = Part.makeCircle(4.48275,Base.Vector(12.5,217.5,92.5),Base.Vector(3,15,-1.5),0,360)
-circle2 = Part.makeCircle(4.58657,Base.Vector(15.5,232.5,91),Base.Vector(3,15,-1.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft58 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft58")
-loft58= Part.makeLoft(section,True)
-Loft58.Shape = loft58
-section.remove
-circle1 = Part.makeCircle(7.95985,Base.Vector(14.75,199.5,19.375),Base.Vector(15.75,-9,-16.875),0,360)
-circle2 = Part.makeCircle(6.45669,Base.Vector(30.5,190.5,2.5),Base.Vector(15.75,-9,-16.875),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft59 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft59")
-loft59= Part.makeLoft(section,True)
-Loft59.Shape = loft59
-section.remove
-circle1 = Part.makeCircle(7.95985,Base.Vector(14.75,199.5,19.375),Base.Vector(0.75,0.75,20.625),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(15.5,200.25,40),Base.Vector(0.75,0.75,20.625),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft60 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft60")
-loft60= Part.makeLoft(section,True)
-Loft60.Shape = loft60
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(18.5,229.5,73),Base.Vector(-3,3,18),0,360)
-circle2 = Part.makeCircle(4.58657,Base.Vector(15.5,232.5,91),Base.Vector(-3,3,18),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft61 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft61")
-loft61= Part.makeLoft(section,True)
-Loft61.Shape = loft61
-section.remove
-circle1 = Part.makeCircle(4.58657,Base.Vector(15.5,232.5,91),Base.Vector(9,-9,1.5),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(24.5,223.5,92.5),Base.Vector(9,-9,1.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft62 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft62")
-loft62= Part.makeLoft(section,True)
-Loft62.Shape = loft62
-section.remove
-circle1 = Part.makeCircle(4.58657,Base.Vector(15.5,232.5,91),Base.Vector(6,13.5,-3),0,360)
-circle2 = Part.makeCircle(4.35493,Base.Vector(21.5,246,88),Base.Vector(6,13.5,-3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft63 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft63")
-loft63= Part.makeLoft(section,True)
-Loft63.Shape = loft63
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(15.5,200.25,40),Base.Vector(15,-0.75,19.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(30.5,199.5,59.5),Base.Vector(15,-0.75,19.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft64 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft64")
-loft64= Part.makeLoft(section,True)
-Loft64.Shape = loft64
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(18.5,229.5,73),Base.Vector(12,-6,-1.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(30.5,223.5,71.5),Base.Vector(12,-6,-1.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft65 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft65")
-loft65= Part.makeLoft(section,True)
-Loft65.Shape = loft65
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(18.5,229.5,73),Base.Vector(-18,33,-1.5),0,360)
-circle2 = Part.makeCircle(7.98308,Base.Vector(0.5,262.5,71.5),Base.Vector(-18,33,-1.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft66 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft66")
-loft66= Part.makeLoft(section,True)
-Loft66.Shape = loft66
-section.remove
-circle1 = Part.makeCircle(4.35493,Base.Vector(21.5,246,88),Base.Vector(12,-13.5,4.5),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(33.5,232.5,92.5),Base.Vector(12,-13.5,4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft67 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft67")
-loft67= Part.makeLoft(section,True)
-Loft67.Shape = loft67
-section.remove
-circle1 = Part.makeCircle(4.35493,Base.Vector(21.5,246,88),Base.Vector(9,16.5,-4.5),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(30.5,262.5,83.5),Base.Vector(9,16.5,-4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft68 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft68")
-loft68= Part.makeLoft(section,True)
-Loft68.Shape = loft68
-section.remove
-circle1 = Part.makeCircle(4.35493,Base.Vector(21.5,246,88),Base.Vector(-3,16.5,-4.5),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(18.5,262.5,83.5),Base.Vector(-3,16.5,-4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft69 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft69")
-loft69= Part.makeLoft(section,True)
-Loft69.Shape = loft69
-section.remove
-circle1 = Part.makeCircle(5.8377,Base.Vector(24.5,112.5,56.5),Base.Vector(19.5,-1.5,-1.5),0,360)
-circle2 = Part.makeCircle(7.44688,Base.Vector(44,111,55),Base.Vector(19.5,-1.5,-1.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft70 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft70")
-loft70= Part.makeLoft(section,True)
-Loft70.Shape = loft70
-section.remove
-circle1 = Part.makeCircle(5.10432,Base.Vector(23,195,-32),Base.Vector(10.5,-4.5,7.5),0,360)
-circle2 = Part.makeCircle(4.49109,Base.Vector(33.5,190.5,-24.5),Base.Vector(10.5,-4.5,7.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft71 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft71")
-loft71= Part.makeLoft(section,True)
-Loft71.Shape = loft71
-section.remove
-circle1 = Part.makeCircle(5.10432,Base.Vector(23,195,-32),Base.Vector(15.75,-12,-12.75),0,360)
-circle2 = Part.makeCircle(5.10432,Base.Vector(38.75,183,-44.75),Base.Vector(15.75,-12,-12.75),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft72 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft72")
-loft72= Part.makeLoft(section,True)
-Loft72.Shape = loft72
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(24.5,223.5,92.5),Base.Vector(9,9,0),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(33.5,232.5,92.5),Base.Vector(9,9,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft73 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft73")
-loft73= Part.makeLoft(section,True)
-Loft73.Shape = loft73
-section.remove
-circle1 = Part.makeCircle(6.45669,Base.Vector(30.5,190.5,2.5),Base.Vector(20.25,-9.75,-12.75),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(50.75,180.75,-10.25),Base.Vector(20.25,-9.75,-12.75),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft74 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft74")
-loft74= Part.makeLoft(section,True)
-Loft74.Shape = loft74
-section.remove
-circle1 = Part.makeCircle(6.45669,Base.Vector(30.5,190.5,2.5),Base.Vector(3,0,-27),0,360)
-circle2 = Part.makeCircle(4.49109,Base.Vector(33.5,190.5,-24.5),Base.Vector(3,0,-27),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft75 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft75")
-loft75= Part.makeLoft(section,True)
-Loft75.Shape = loft75
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(30.5,199.5,59.5),Base.Vector(0,24,12),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(30.5,223.5,71.5),Base.Vector(0,24,12),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft76 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft76")
-loft76= Part.makeLoft(section,True)
-Loft76.Shape = loft76
-section.remove
-circle1 = Part.makeCircle(4.49109,Base.Vector(33.5,190.5,-24.5),Base.Vector(17.25,-9.75,14.25),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(50.75,180.75,-10.25),Base.Vector(17.25,-9.75,14.25),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft77 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft77")
-loft77= Part.makeLoft(section,True)
-Loft77.Shape = loft77
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(30.5,223.5,71.5),Base.Vector(12,-9,0),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(42.5,214.5,71.5),Base.Vector(12,-9,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft78 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft78")
-loft78= Part.makeLoft(section,True)
-Loft78.Shape = loft78
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(33.5,232.5,92.5),Base.Vector(27,30,0),0,360)
-circle2 = Part.makeCircle(5.13174,Base.Vector(60.5,262.5,92.5),Base.Vector(27,30,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft79 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft79")
-loft79= Part.makeLoft(section,True)
-Loft79.Shape = loft79
-section.remove
-circle1 = Part.makeCircle(5.10432,Base.Vector(38.75,183,-44.75),Base.Vector(18.75,-7.5,29.25),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(57.5,175.5,-15.5),Base.Vector(18.75,-7.5,29.25),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft80 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft80")
-loft80= Part.makeLoft(section,True)
-Loft80.Shape = loft80
-section.remove
-circle1 = Part.makeCircle(7.44688,Base.Vector(44,111,55),Base.Vector(19.5,13.5,1.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(63.5,124.5,56.5),Base.Vector(19.5,13.5,1.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft81 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft81")
-loft81= Part.makeLoft(section,True)
-Loft81.Shape = loft81
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(42.5,214.5,71.5),Base.Vector(9,-9,0),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(51.5,205.5,71.5),Base.Vector(9,-9,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft82 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft82")
-loft82= Part.makeLoft(section,True)
-Loft82.Shape = loft82
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(42.5,214.5,71.5),Base.Vector(30,36,6),0,360)
-circle2 = Part.makeCircle(8.32407,Base.Vector(72.5,250.5,77.5),Base.Vector(30,36,6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft83 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft83")
-loft83= Part.makeLoft(section,True)
-Loft83.Shape = loft83
-section.remove
-circle1 = Part.makeCircle(7.44688,Base.Vector(44,111,55),Base.Vector(19.5,-4.5,-1.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(63.5,106.5,53.5),Base.Vector(19.5,-4.5,-1.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft84 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft84")
-loft84= Part.makeLoft(section,True)
-Loft84.Shape = loft84
-section.remove
-circle1 = Part.makeCircle(7.44688,Base.Vector(44,111,55),Base.Vector(-7.5,-28.5,-1.5),0,360)
-circle2 = Part.makeCircle(4.00726,Base.Vector(36.5,82.5,53.5),Base.Vector(-7.5,-28.5,-1.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft85 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft85")
-loft85= Part.makeLoft(section,True)
-Loft85.Shape = loft85
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(51.5,205.5,71.5),Base.Vector(9,-15,18),0,360)
-circle2 = Part.makeCircle(7.4113,Base.Vector(60.5,190.5,89.5),Base.Vector(9,-15,18),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft86 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft86")
-loft86= Part.makeLoft(section,True)
-Loft86.Shape = loft86
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(51.5,205.5,71.5),Base.Vector(7.5,-36,-9),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(59,169.5,62.5),Base.Vector(7.5,-36,-9),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft87 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft87")
-loft87= Part.makeLoft(section,True)
-Loft87.Shape = loft87
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(50.75,180.75,-10.25),Base.Vector(6.75,-5.25,-5.25),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(57.5,175.5,-15.5),Base.Vector(6.75,-5.25,-5.25),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft88 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft88")
-loft88= Part.makeLoft(section,True)
-Loft88.Shape = loft88
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(50.75,180.75,-10.25),Base.Vector(8.25,-11.25,72.75),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(59,169.5,62.5),Base.Vector(8.25,-11.25,72.75),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft89 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft89")
-loft89= Part.makeLoft(section,True)
-Loft89.Shape = loft89
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(59,169.5,62.5),Base.Vector(1.5,21,27),0,360)
-circle2 = Part.makeCircle(7.4113,Base.Vector(60.5,190.5,89.5),Base.Vector(1.5,21,27),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft90 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft90")
-loft90= Part.makeLoft(section,True)
-Loft90.Shape = loft90
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(57.5,175.5,-15.5),Base.Vector(10.5,-34.5,-27),0,360)
-circle2 = Part.makeCircle(4.49802,Base.Vector(68,141,-42.5),Base.Vector(10.5,-34.5,-27),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft91 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft91")
-loft91= Part.makeLoft(section,True)
-Loft91.Shape = loft91
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(59,169.5,62.5),Base.Vector(4.5,-45,-6),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(63.5,124.5,56.5),Base.Vector(4.5,-45,-6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft92 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft92")
-loft92= Part.makeLoft(section,True)
-Loft92.Shape = loft92
-section.remove
-circle1 = Part.makeCircle(7.4113,Base.Vector(60.5,190.5,89.5),Base.Vector(0,72,3),0,360)
-circle2 = Part.makeCircle(5.13174,Base.Vector(60.5,262.5,92.5),Base.Vector(0,72,3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft93 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft93")
-loft93= Part.makeLoft(section,True)
-Loft93.Shape = loft93
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(63.5,106.5,53.5),Base.Vector(3,-24,-6),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(66.5,82.5,47.5),Base.Vector(3,-24,-6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft94 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft94")
-loft94= Part.makeLoft(section,True)
-Loft94.Shape = loft94
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(63.5,106.5,53.5),Base.Vector(0,18,3),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(63.5,124.5,56.5),Base.Vector(0,18,3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft95 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft95")
-loft95= Part.makeLoft(section,True)
-Loft95.Shape = loft95
-section.remove
-circle1 = Part.makeCircle(4.85043,Base.Vector(62,153,-48.5),Base.Vector(6,-12,6),0,360)
-circle2 = Part.makeCircle(4.49802,Base.Vector(68,141,-42.5),Base.Vector(6,-12,6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft96 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft96")
-loft96= Part.makeLoft(section,True)
-Loft96.Shape = loft96
-section.remove
-circle1 = Part.makeCircle(4.49802,Base.Vector(68,141,-42.5),Base.Vector(1.5,-58.5,-6),0,360)
-circle2 = Part.makeCircle(4.3929,Base.Vector(69.5,82.5,-48.5),Base.Vector(1.5,-58.5,-6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft97 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft97")
-loft97= Part.makeLoft(section,True)
-Loft97.Shape = loft97
-section.remove
-circle1 = Part.makeCircle(8.32407,Base.Vector(72.5,250.5,77.5),Base.Vector(-3,12,15),0,360)
-circle2 = Part.makeCircle(4.99191,Base.Vector(69.5,262.5,92.5),Base.Vector(-3,12,15),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft98 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft98")
-loft98= Part.makeLoft(section,True)
-Loft98.Shape = loft98
-section.remove
-circle1 = Part.makeCircle(8.32407,Base.Vector(72.5,250.5,77.5),Base.Vector(-6,12,-6),0,360)
-circle2 = Part.makeCircle(6.25379,Base.Vector(66.5,262.5,71.5),Base.Vector(-6,12,-6),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft99 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft99")
-loft99= Part.makeLoft(section,True)
-Loft99.Shape = loft99
-section.remove
-circle1 = Part.makeCircle(8.92186,Base.Vector(-14.5,144,-9.5),Base.Vector(0,15,-27),0,360)
-circle2 = Part.makeCircle(4.35996,Base.Vector(-14.5,159,-36.5),Base.Vector(0,15,-27),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft100 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft100")
-loft100= Part.makeLoft(section,True)
-Loft100.Shape = loft100
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-11.5,196.5,65.5),Base.Vector(6,-15,4.5),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-5.5,181.5,70),Base.Vector(6,-15,4.5),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft101 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft101")
-loft101= Part.makeLoft(section,True)
-Loft101.Shape = loft101
-section.remove
-circle1 = Part.makeCircle(4.85043,Base.Vector(62,153,-48.5),Base.Vector(-23.25,30,3.75),0,360)
-circle2 = Part.makeCircle(5.10432,Base.Vector(38.75,183,-44.75),Base.Vector(-23.25,30,3.75),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft102 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft102")
-loft102= Part.makeLoft(section,True)
-Loft102.Shape = loft102
-section.remove
-circle1 = Part.makeCircle(5.13174,Base.Vector(60.5,262.5,92.5),Base.Vector(9,0,0),0,360)
-circle2 = Part.makeCircle(4.99191,Base.Vector(69.5,262.5,92.5),Base.Vector(9,0,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft103 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft103")
-loft103= Part.makeLoft(section,True)
-Loft103.Shape = loft103
-section.remove
-circle1 = Part.makeCircle(4.99191,Base.Vector(69.5,262.5,92.5),Base.Vector(-3,0,-21),0,360)
-circle2 = Part.makeCircle(6.25379,Base.Vector(66.5,262.5,71.5),Base.Vector(-3,0,-21),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft104 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft104")
-loft104= Part.makeLoft(section,True)
-Loft104.Shape = loft104
-section.remove
-circle1 = Part.makeCircle(6.25379,Base.Vector(66.5,262.5,71.5),Base.Vector(-66,0,0),0,360)
-circle2 = Part.makeCircle(7.98308,Base.Vector(0.5,262.5,71.5),Base.Vector(-66,0,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft105 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft105")
-loft105= Part.makeLoft(section,True)
-Loft105.Shape = loft105
-section.remove
-circle1 = Part.makeCircle(7.98308,Base.Vector(0.5,262.5,71.5),Base.Vector(-12,0,3),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-11.5,262.5,74.5),Base.Vector(-12,0,3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft106 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft106")
-loft106= Part.makeLoft(section,True)
-Loft106.Shape = loft106
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-11.5,262.5,74.5),Base.Vector(-15,0,0),0,360)
-circle2 = Part.makeCircle(7.85803,Base.Vector(-26.5,262.5,74.5),Base.Vector(-15,0,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft107 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft107")
-loft107= Part.makeLoft(section,True)
-Loft107.Shape = loft107
-section.remove
-circle1 = Part.makeCircle(7.85803,Base.Vector(-26.5,262.5,74.5),Base.Vector(-9,0,-3),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(-35.5,262.5,71.5),Base.Vector(-9,0,-3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft108 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft108")
-loft108= Part.makeLoft(section,True)
-Loft108.Shape = loft108
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(-35.5,262.5,86.5),Base.Vector(54,0,-3),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(18.5,262.5,83.5),Base.Vector(54,0,-3),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft109 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft109")
-loft109= Part.makeLoft(section,True)
-Loft109.Shape = loft109
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(18.5,262.5,83.5),Base.Vector(12,0,0),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(30.5,262.5,83.5),Base.Vector(12,0,0),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft110 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft110")
-loft110= Part.makeLoft(section,True)
-Loft110.Shape = loft110
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(30.5,262.5,83.5),Base.Vector(30,0,9),0,360)
-circle2 = Part.makeCircle(5.13174,Base.Vector(60.5,262.5,92.5),Base.Vector(30,0,9),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft111 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft111")
-loft111= Part.makeLoft(section,True)
-Loft111.Shape = loft111
-section.remove
-circle1 = Part.makeCircle(5.13174,Base.Vector(60.5,262.5,92.5),Base.Vector(6,0,-21),0,360)
-circle2 = Part.makeCircle(6.25379,Base.Vector(66.5,262.5,71.5),Base.Vector(6,0,-21),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft112 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft112")
-loft112= Part.makeLoft(section,True)
-Loft112.Shape = loft112
-section.remove
-circle1 = Part.makeCircle(6.25379,Base.Vector(66.5,262.5,71.5),Base.Vector(-36,0,12),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(30.5,262.5,83.5),Base.Vector(-36,0,12),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft113 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft113")
-loft113= Part.makeLoft(section,True)
-Loft113.Shape = loft113
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(30.5,262.5,83.5),Base.Vector(-30,0,-12),0,360)
-circle2 = Part.makeCircle(7.98308,Base.Vector(0.5,262.5,71.5),Base.Vector(-30,0,-12),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft114 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft114")
-loft114= Part.makeLoft(section,True)
-Loft114.Shape = loft114
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(18.5,262.5,83.5),Base.Vector(-18,0,-12),0,360)
-circle2 = Part.makeCircle(7.98308,Base.Vector(0.5,262.5,71.5),Base.Vector(-18,0,-12),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft115 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft115")
-loft115= Part.makeLoft(section,True)
-Loft115.Shape = loft115
-section.remove
-circle1 = Part.makeCircle(4,Base.Vector(18.5,262.5,83.5),Base.Vector(-30,0,-9),0,360)
-circle2 = Part.makeCircle(10,Base.Vector(-11.5,262.5,74.5),Base.Vector(-30,0,-9),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft116 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft116")
-loft116= Part.makeLoft(section,True)
-Loft116.Shape = loft116
-section.remove
-circle1 = Part.makeCircle(10,Base.Vector(-11.5,262.5,74.5),Base.Vector(-24,0,12),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(-35.5,262.5,86.5),Base.Vector(-24,0,12),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft117 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft117")
-loft117= Part.makeLoft(section,True)
-Loft117.Shape = loft117
-section.remove
-circle1 = Part.makeCircle(7.85803,Base.Vector(-26.5,262.5,74.5),Base.Vector(-9,0,12),0,360)
-circle2 = Part.makeCircle(4,Base.Vector(-35.5,262.5,86.5),Base.Vector(-9,0,12),0,360)
-section = []
-section.append(circle1)
-section.append(circle2)
-Loft118 = FreeCAD.ActiveDocument.addObject("Part::Loft","Loft118")
-loft118= Part.makeLoft(section,True)
-Loft118.Shape = loft118
-section.remove
+Cyn0 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder0")
+cylinder0 = Part.makeCylinder(2,15,Base.Vector(-35.5,262.5,86.5),Base.Vector(0,0,-15),360)
+Cyn0.Shape = cylinder0
+Part.show(cylinder0)
+App.getDocument("test").removeObject("Cylinder0")
+Cyn1 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder1")
+cylinder1 = Part.makeCylinder(2,22.0454,Base.Vector(-35.5,262.5,86.5),Base.Vector(3,-21,6),360)
+Cyn1.Shape = cylinder1
+Part.show(cylinder1)
+App.getDocument("test").removeObject("Cylinder1")
+Cyn2 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder2")
+cylinder2 = Part.makeCylinder(2.27983,17.525,Base.Vector(-31.75,224.25,95.5),Base.Vector(-0.75,17.25,-3),360)
+Cyn2.Shape = cylinder2
+Part.show(cylinder2)
+App.getDocument("test").removeObject("Cylinder2")
+Cyn3 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder3")
+cylinder3 = Part.makeCylinder(2,45.3114,Base.Vector(-31.75,224.25,95.5),Base.Vector(-3.75,38.25,-24),360)
+Cyn3.Shape = cylinder3
+Part.show(cylinder3)
+App.getDocument("test").removeObject("Cylinder3")
+Cyn4 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder4")
+cylinder4 = Part.makeCylinder(2,18.5843,Base.Vector(-31.75,224.25,95.5),Base.Vector(5.25,-17.25,-4.5),360)
+Cyn4.Shape = cylinder4
+Part.show(cylinder4)
+App.getDocument("test").removeObject("Cylinder4")
+Cyn5 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder5")
+cylinder5 = Part.makeCylinder(2.29353,12.3693,Base.Vector(-32.5,241.5,92.5),Base.Vector(9,6,-6),360)
+Cyn5.Shape = cylinder5
+Part.show(cylinder5)
+App.getDocument("test").removeObject("Cylinder5")
+Cyn6 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder6")
+cylinder6 = Part.makeCylinder(2,14.8871,Base.Vector(-31.75,224.25,95.5),Base.Vector(11.25,-9.75,0),360)
+Cyn6.Shape = cylinder6
+Part.show(cylinder6)
+App.getDocument("test").removeObject("Cylinder6")
+Cyn7 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder7")
+cylinder7 = Part.makeCylinder(2,20.7575,Base.Vector(-31.75,224.25,95.5),Base.Vector(20.25,0.75,-4.5),360)
+Cyn7.Shape = cylinder7
+Part.show(cylinder7)
+App.getDocument("test").removeObject("Cylinder7")
+Cyn8 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder8")
+cylinder8 = Part.makeCylinder(2,24.7159,Base.Vector(-26.5,207,91),Base.Vector(23.25,-8.25,1.5),360)
+Cyn8.Shape = cylinder8
+Part.show(cylinder8)
+App.getDocument("test").removeObject("Cylinder8")
+Cyn9 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder9")
+cylinder9 = Part.makeCylinder(2,20.8926,Base.Vector(-26.5,207,91),Base.Vector(6,4.5,-19.5),360)
+Cyn9.Shape = cylinder9
+Part.show(cylinder9)
+App.getDocument("test").removeObject("Cylinder9")
+Cyn10 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder10")
+cylinder10 = Part.makeCylinder(2,10.6066,Base.Vector(-26.5,207,91),Base.Vector(6,7.5,4.5),360)
+Cyn10.Shape = cylinder10
+Part.show(cylinder10)
+App.getDocument("test").removeObject("Cylinder10")
+Cyn11 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder11")
+cylinder11 = Part.makeCylinder(3.17385,18,Base.Vector(-23.5,247.5,86.5),Base.Vector(12,-12,-6),360)
+Cyn11.Shape = cylinder11
+Part.show(cylinder11)
+App.getDocument("test").removeObject("Cylinder11")
+Cyn12 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder12")
+cylinder12 = Part.makeCylinder(2.29781,19.4422,Base.Vector(-23.5,247.5,86.5),Base.Vector(-3,15,-12),360)
+Cyn12.Shape = cylinder12
+Part.show(cylinder12)
+App.getDocument("test").removeObject("Cylinder12")
+Cyn13 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder13")
+cylinder13 = Part.makeCylinder(5,18.4932,Base.Vector(-20.5,211.5,71.5),Base.Vector(9,-15,-6),360)
+Cyn13.Shape = cylinder13
+Part.show(cylinder13)
+App.getDocument("test").removeObject("Cylinder13")
+Cyn14 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder14")
+cylinder14 = Part.makeCylinder(5,27.1662,Base.Vector(-20.5,211.5,71.5),Base.Vector(9,24,9),360)
+Cyn14.Shape = cylinder14
+Part.show(cylinder14)
+App.getDocument("test").removeObject("Cylinder14")
+Cyn15 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder15")
+cylinder15 = Part.makeCylinder(2,14.543,Base.Vector(-20.5,214.5,95.5),Base.Vector(9,10.5,-4.5),360)
+Cyn15.Shape = cylinder15
+Part.show(cylinder15)
+App.getDocument("test").removeObject("Cylinder15")
+Cyn16 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder16")
+cylinder16 = Part.makeCylinder(2,21.1867,Base.Vector(-17.5,121.5,32.5),Base.Vector(9.75,-7.5,17.25),360)
+Cyn16.Shape = cylinder16
+Part.show(cylinder16)
+App.getDocument("test").removeObject("Cylinder16")
+Cyn17 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder17")
+cylinder17 = Part.makeCylinder(2,47.7415,Base.Vector(-17.5,121.5,32.5),Base.Vector(3,22.5,-42),360)
+Cyn17.Shape = cylinder17
+Part.show(cylinder17)
+App.getDocument("test").removeObject("Cylinder17")
+Cyn18 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder18")
+cylinder18 = Part.makeCylinder(2,44.6171,Base.Vector(-17.5,121.5,32.5),Base.Vector(5.25,44.25,2.25),360)
+Cyn18.Shape = cylinder18
+Part.show(cylinder18)
+App.getDocument("test").removeObject("Cylinder18")
+Cyn19 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder19")
+cylinder19 = Part.makeCylinder(3.88034,13.8293,Base.Vector(-14.5,133.5,-18.5),Base.Vector(0,10.5,9),360)
+Cyn19.Shape = cylinder19
+Part.show(cylinder19)
+App.getDocument("test").removeObject("Cylinder19")
+Cyn20 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder20")
+cylinder20 = Part.makeCylinder(3.65005,43.3705,Base.Vector(-14.5,133.5,-18.5),Base.Vector(3,-36,-24),360)
+Cyn20.Shape = cylinder20
+Part.show(cylinder20)
+App.getDocument("test").removeObject("Cylinder20")
+Cyn21 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder21")
+cylinder21 = Part.makeCylinder(2,18.9291,Base.Vector(-14.5,133.5,-18.5),Base.Vector(0,10.5,-15.75),360)
+Cyn21.Shape = cylinder21
+Part.show(cylinder21)
+App.getDocument("test").removeObject("Cylinder21")
+Cyn22 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder22")
+cylinder22 = Part.makeCylinder(2,40.8389,Base.Vector(-14.5,144,-34.25),Base.Vector(27,-28.5,-11.25),360)
+Cyn22.Shape = cylinder22
+Part.show(cylinder22)
+App.getDocument("test").removeObject("Cylinder22")
+Cyn23 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder23")
+cylinder23 = Part.makeCylinder(2.17998,15.1678,Base.Vector(-14.5,144,-34.25),Base.Vector(0,15,-2.25),360)
+Cyn23.Shape = cylinder23
+Part.show(cylinder23)
+App.getDocument("test").removeObject("Cylinder23")
+Cyn24 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder24")
+cylinder24 = Part.makeCylinder(4.46093,32.8976,Base.Vector(-14.5,144,-9.5),Base.Vector(0,22.5,24),360)
+Cyn24.Shape = cylinder24
+Part.show(cylinder24)
+App.getDocument("test").removeObject("Cylinder24")
+Cyn25 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder25")
+cylinder25 = Part.makeCylinder(3.49505,20.3884,Base.Vector(-14.5,166.5,14.5),Base.Vector(2.25,-0.75,20.25),360)
+Cyn25.Shape = cylinder25
+Part.show(cylinder25)
+App.getDocument("test").removeObject("Cylinder25")
+Cyn26 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder26")
+cylinder26 = Part.makeCylinder(3.76443,32.2064,Base.Vector(-14.5,166.5,14.5),Base.Vector(12,28.5,-9),360)
+Cyn26.Shape = cylinder26
+Part.show(cylinder26)
+App.getDocument("test").removeObject("Cylinder26")
+Cyn27 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder27")
+cylinder27 = Part.makeCylinder(2.70909,42.4993,Base.Vector(-12.25,165.75,34.75),Base.Vector(9.75,29.25,-29.25),360)
+Cyn27.Shape = cylinder27
+Part.show(cylinder27)
+App.getDocument("test").removeObject("Cylinder27")
+Cyn28 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder28")
+cylinder28 = Part.makeCylinder(4.99853,15.5885,Base.Vector(-11.5,97.5,-42.5),Base.Vector(-3,-15,-3),360)
+Cyn28.Shape = cylinder28
+Part.show(cylinder28)
+App.getDocument("test").removeObject("Cylinder28")
+Cyn29 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder29")
+cylinder29 = Part.makeCylinder(2,30.1496,Base.Vector(-11.5,97.5,-42.5),Base.Vector(24,18,-3),360)
+Cyn29.Shape = cylinder29
+Part.show(cylinder29)
+App.getDocument("test").removeObject("Cylinder29")
+Cyn30 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder30")
+cylinder30 = Part.makeCylinder(4.10611,18.8994,Base.Vector(-12.25,165.75,34.75),Base.Vector(0.75,-2.25,18.75),360)
+Cyn30.Shape = cylinder30
+Part.show(cylinder30)
+App.getDocument("test").removeObject("Cylinder30")
+Cyn31 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder31")
+cylinder31 = Part.makeCylinder(5,33.2716,Base.Vector(-11.5,163.5,53.5),Base.Vector(3,-33,3),360)
+Cyn31.Shape = cylinder31
+Part.show(cylinder31)
+App.getDocument("test").removeObject("Cylinder31")
+Cyn32 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder32")
+cylinder32 = Part.makeCylinder(5,25.1446,Base.Vector(-11.5,163.5,53.5),Base.Vector(6,18,16.5),360)
+Cyn32.Shape = cylinder32
+Part.show(cylinder32)
+App.getDocument("test").removeObject("Cylinder32")
+Cyn33 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder33")
+cylinder33 = Part.makeCylinder(2,52.1776,Base.Vector(-14.5,159,-36.5),Base.Vector(37.5,36,4.5),360)
+Cyn33.Shape = cylinder33
+Part.show(cylinder33)
+App.getDocument("test").removeObject("Cylinder33")
+Cyn34 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder34")
+cylinder34 = Part.makeCylinder(3.43738,34.687,Base.Vector(-12.25,165.75,34.75),Base.Vector(12.75,32.25,0.75),360)
+Cyn34.Shape = cylinder34
+Part.show(cylinder34)
+App.getDocument("test").removeObject("Cylinder34")
+Cyn35 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder35")
+cylinder35 = Part.makeCylinder(4.9238,37.3271,Base.Vector(-11.5,196.5,65.5),Base.Vector(27,3.75,-25.5),360)
+Cyn35.Shape = cylinder35
+Part.show(cylinder35)
+App.getDocument("test").removeObject("Cylinder35")
+Cyn36 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder36")
+cylinder36 = Part.makeCylinder(2,27.5568,Base.Vector(-11.5,225,91),Base.Vector(8.25,-26.25,1.5),360)
+Cyn36.Shape = cylinder36
+Part.show(cylinder36)
+App.getDocument("test").removeObject("Cylinder36")
+Cyn37 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder37")
+cylinder37 = Part.makeCylinder(2,14.8492,Base.Vector(-11.5,225,91),Base.Vector(0,10.5,-10.5),360)
+Cyn37.Shape = cylinder37
+Part.show(cylinder37)
+App.getDocument("test").removeObject("Cylinder37")
+Cyn38 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder38")
+cylinder38 = Part.makeCylinder(5,27.6586,Base.Vector(-11.5,235.5,80.5),Base.Vector(0,27,-6),360)
+Cyn38.Shape = cylinder38
+Part.show(cylinder38)
+App.getDocument("test").removeObject("Cylinder38")
+Cyn39 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder39")
+cylinder39 = Part.makeCylinder(5,17.8431,Base.Vector(-7.75,114,49.75),Base.Vector(-0.75,16.5,6.75),360)
+Cyn39.Shape = cylinder39
+Part.show(cylinder39)
+App.getDocument("test").removeObject("Cylinder39")
+Cyn40 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder40")
+cylinder40 = Part.makeCylinder(2.91885,37.5899,Base.Vector(-8.5,130.5,56.5),Base.Vector(33,-18,0),360)
+Cyn40.Shape = cylinder40
+Part.show(cylinder40)
+App.getDocument("test").removeObject("Cylinder40")
+Cyn41 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder41")
+cylinder41 = Part.makeCylinder(4.98922,12.3238,Base.Vector(-7.75,114,49.75),Base.Vector(5.25,-10.5,3.75),360)
+Cyn41.Shape = cylinder41
+Part.show(cylinder41)
+App.getDocument("test").removeObject("Cylinder41")
+Cyn42 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder42")
+cylinder42 = Part.makeCylinder(2.32306,24.6018,Base.Vector(-5.5,181.5,70),Base.Vector(15,18,-7.5),360)
+Cyn42.Shape = cylinder42
+Part.show(cylinder42)
+App.getDocument("test").removeObject("Cylinder42")
+Cyn43 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder43")
+cylinder43 = Part.makeCylinder(2.93342,20.347,Base.Vector(-5.5,181.5,70),Base.Vector(9,3,18),360)
+Cyn43.Shape = cylinder43
+Part.show(cylinder43)
+App.getDocument("test").removeObject("Cylinder43")
+Cyn44 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder44")
+cylinder44 = Part.makeCylinder(2,28.6182,Base.Vector(-2.5,103.5,53.5),Base.Vector(27,9,3),360)
+Cyn44.Shape = cylinder44
+Part.show(cylinder44)
+App.getDocument("test").removeObject("Cylinder44")
+Cyn45 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder45")
+cylinder45 = Part.makeCylinder(4.64823,23.622,Base.Vector(-2.5,103.5,53.5),Base.Vector(-6,-21,-9),360)
+Cyn45.Shape = cylinder45
+Part.show(cylinder45)
+App.getDocument("test").removeObject("Cylinder45")
+Cyn46 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder46")
+cylinder46 = Part.makeCylinder(2.25884,45.3486,Base.Vector(-2.5,195,5.5),Base.Vector(25.5,0,-37.5),360)
+Cyn46.Shape = cylinder46
+Part.show(cylinder46)
+App.getDocument("test").removeObject("Cylinder46")
+Cyn47 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder47")
+cylinder47 = Part.makeCylinder(2.81134,16.3974,Base.Vector(-3.25,198.75,92.5),Base.Vector(6.75,-14.25,-4.5),360)
+Cyn47.Shape = cylinder47
+Part.show(cylinder47)
+App.getDocument("test").removeObject("Cylinder47")
+Cyn48 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder48")
+cylinder48 = Part.makeCylinder(2,42.4131,Base.Vector(-3.25,198.75,92.5),Base.Vector(21.75,30.75,-19.5),360)
+Cyn48.Shape = cylinder48
+Part.show(cylinder48)
+App.getDocument("test").removeObject("Cylinder48")
+Cyn49 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder49")
+cylinder49 = Part.makeCylinder(2.38981,22.5904,Base.Vector(-2.5,195,5.5),Base.Vector(17.25,4.5,13.875),360)
+Cyn49.Shape = cylinder49
+Part.show(cylinder49)
+App.getDocument("test").removeObject("Cylinder49")
+Cyn50 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder50")
+cylinder50 = Part.makeCylinder(3.23382,15.8213,Base.Vector(0.5,198,35.5),Base.Vector(15,2.25,4.5),360)
+Cyn50.Shape = cylinder50
+Part.show(cylinder50)
+App.getDocument("test").removeObject("Cylinder50")
+Cyn51 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder51")
+cylinder51 = Part.makeCylinder(2.24137,24.4872,Base.Vector(-3.25,198.75,92.5),Base.Vector(15.75,18.75,0),360)
+Cyn51.Shape = cylinder51
+Part.show(cylinder51)
+App.getDocument("test").removeObject("Cylinder51")
+Cyn52 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder52")
+cylinder52 = Part.makeCylinder(2,21.5715,Base.Vector(0.5,198,35.5),Base.Vector(14.25,1.5,-16.125),360)
+Cyn52.Shape = cylinder52
+Part.show(cylinder52)
+App.getDocument("test").removeObject("Cylinder52")
+Cyn53 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder53")
+cylinder53 = Part.makeCylinder(2,42.0268,Base.Vector(3.5,184.5,88),Base.Vector(27,15,-28.5),360)
+Cyn53.Shape = cylinder53
+Part.show(cylinder53)
+App.getDocument("test").removeObject("Cylinder53")
+Cyn54 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder54")
+cylinder54 = Part.makeCylinder(2,30.1869,Base.Vector(3.5,184.5,88),Base.Vector(6,15,-25.5),360)
+Cyn54.Shape = cylinder54
+Part.show(cylinder54)
+App.getDocument("test").removeObject("Cylinder54")
+Cyn55 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder55")
+cylinder55 = Part.makeCylinder(2,33.1361,Base.Vector(9.5,199.5,62.5),Base.Vector(21,24,9),360)
+Cyn55.Shape = cylinder55
+Part.show(cylinder55)
+App.getDocument("test").removeObject("Cylinder55")
+Cyn56 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder56")
+cylinder56 = Part.makeCylinder(2,62.1731,Base.Vector(12.5,115.5,-45.5),Base.Vector(49.5,37.5,-3),360)
+Cyn56.Shape = cylinder56
+Part.show(cylinder56)
+App.getDocument("test").removeObject("Cylinder56")
+Cyn57 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder57")
+cylinder57 = Part.makeCylinder(2,13.4164,Base.Vector(12.5,217.5,92.5),Base.Vector(12,6,0),360)
+Cyn57.Shape = cylinder57
+Part.show(cylinder57)
+App.getDocument("test").removeObject("Cylinder57")
+Cyn58 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder58")
+cylinder58 = Part.makeCylinder(2,15.3704,Base.Vector(12.5,217.5,92.5),Base.Vector(3,15,-1.5),360)
+Cyn58.Shape = cylinder58
+Part.show(cylinder58)
+App.getDocument("test").removeObject("Cylinder58")
+Cyn59 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder59")
+cylinder59 = Part.makeCylinder(3.22834,24.7756,Base.Vector(14.75,199.5,19.375),Base.Vector(15.75,-9,-16.875),360)
+Cyn59.Shape = cylinder59
+Part.show(cylinder59)
+App.getDocument("test").removeObject("Cylinder59")
+Cyn60 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder60")
+cylinder60 = Part.makeCylinder(3.97992,20.6523,Base.Vector(14.75,199.5,19.375),Base.Vector(0.75,0.75,20.625),360)
+Cyn60.Shape = cylinder60
+Part.show(cylinder60)
+App.getDocument("test").removeObject("Cylinder60")
+Cyn61 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder61")
+cylinder61 = Part.makeCylinder(2.29328,18.4932,Base.Vector(18.5,229.5,73),Base.Vector(-3,3,18),360)
+Cyn61.Shape = cylinder61
+Part.show(cylinder61)
+App.getDocument("test").removeObject("Cylinder61")
+Cyn62 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder62")
+cylinder62 = Part.makeCylinder(2,12.816,Base.Vector(15.5,232.5,91),Base.Vector(9,-9,1.5),360)
+Cyn62.Shape = cylinder62
+Part.show(cylinder62)
+App.getDocument("test").removeObject("Cylinder62")
+Cyn63 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder63")
+cylinder63 = Part.makeCylinder(2.17746,15.0748,Base.Vector(15.5,232.5,91),Base.Vector(6,13.5,-3),360)
+Cyn63.Shape = cylinder63
+Part.show(cylinder63)
+App.getDocument("test").removeObject("Cylinder63")
+Cyn64 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder64")
+cylinder64 = Part.makeCylinder(5,24.6133,Base.Vector(15.5,200.25,40),Base.Vector(15,-0.75,19.5),360)
+Cyn64.Shape = cylinder64
+Part.show(cylinder64)
+App.getDocument("test").removeObject("Cylinder64")
+Cyn65 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder65")
+cylinder65 = Part.makeCylinder(5,13.5,Base.Vector(18.5,229.5,73),Base.Vector(12,-6,-1.5),360)
+Cyn65.Shape = cylinder65
+Part.show(cylinder65)
+App.getDocument("test").removeObject("Cylinder65")
+Cyn66 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder66")
+cylinder66 = Part.makeCylinder(3.99154,37.6198,Base.Vector(18.5,229.5,73),Base.Vector(-18,33,-1.5),360)
+Cyn66.Shape = cylinder66
+Part.show(cylinder66)
+App.getDocument("test").removeObject("Cylinder66")
+Cyn67 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder67")
+cylinder67 = Part.makeCylinder(2,18.6145,Base.Vector(21.5,246,88),Base.Vector(12,-13.5,4.5),360)
+Cyn67.Shape = cylinder67
+Part.show(cylinder67)
+App.getDocument("test").removeObject("Cylinder67")
+Cyn68 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder68")
+cylinder68 = Part.makeCylinder(2,19.3261,Base.Vector(21.5,246,88),Base.Vector(9,16.5,-4.5),360)
+Cyn68.Shape = cylinder68
+Part.show(cylinder68)
+App.getDocument("test").removeObject("Cylinder68")
+Cyn69 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder69")
+cylinder69 = Part.makeCylinder(2,17.3638,Base.Vector(21.5,246,88),Base.Vector(-3,16.5,-4.5),360)
+Cyn69.Shape = cylinder69
+Part.show(cylinder69)
+App.getDocument("test").removeObject("Cylinder69")
+Cyn70 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder70")
+cylinder70 = Part.makeCylinder(2.80558,19.615,Base.Vector(24.5,112.5,56.5),Base.Vector(19.5,-1.5,-1.5),360)
+Cyn70.Shape = cylinder70
+Part.show(cylinder70)
+App.getDocument("test").removeObject("Cylinder70")
+Cyn71 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder71")
+cylinder71 = Part.makeCylinder(2.24555,13.6657,Base.Vector(23,195,-32),Base.Vector(10.5,-4.5,7.5),360)
+Cyn71.Shape = cylinder71
+Part.show(cylinder71)
+App.getDocument("test").removeObject("Cylinder71")
+Cyn72 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder72")
+cylinder72 = Part.makeCylinder(2.55216,23.5505,Base.Vector(23,195,-32),Base.Vector(15.75,-12,-12.75),360)
+Cyn72.Shape = cylinder72
+Part.show(cylinder72)
+App.getDocument("test").removeObject("Cylinder72")
+Cyn73 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder73")
+cylinder73 = Part.makeCylinder(2,12.7279,Base.Vector(24.5,223.5,92.5),Base.Vector(9,9,0),360)
+Cyn73.Shape = cylinder73
+Part.show(cylinder73)
+App.getDocument("test").removeObject("Cylinder73")
+Cyn74 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder74")
+cylinder74 = Part.makeCylinder(2,25.8396,Base.Vector(30.5,190.5,2.5),Base.Vector(20.25,-9.75,-12.75),360)
+Cyn74.Shape = cylinder74
+Part.show(cylinder74)
+App.getDocument("test").removeObject("Cylinder74")
+Cyn75 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder75")
+cylinder75 = Part.makeCylinder(2.01184,27.1662,Base.Vector(30.5,190.5,2.5),Base.Vector(3,0,-27),360)
+Cyn75.Shape = cylinder75
+Part.show(cylinder75)
+App.getDocument("test").removeObject("Cylinder75")
+Cyn76 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder76")
+cylinder76 = Part.makeCylinder(4.99487,26.8328,Base.Vector(30.5,199.5,59.5),Base.Vector(0,24,12),360)
+Cyn76.Shape = cylinder76
+Part.show(cylinder76)
+App.getDocument("test").removeObject("Cylinder76")
+Cyn77 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder77")
+cylinder77 = Part.makeCylinder(2,24.4067,Base.Vector(33.5,190.5,-24.5),Base.Vector(17.25,-9.75,14.25),360)
+Cyn77.Shape = cylinder77
+Part.show(cylinder77)
+App.getDocument("test").removeObject("Cylinder77")
+Cyn78 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder78")
+cylinder78 = Part.makeCylinder(5,15,Base.Vector(30.5,223.5,71.5),Base.Vector(12,-9,0),360)
+Cyn78.Shape = cylinder78
+Part.show(cylinder78)
+App.getDocument("test").removeObject("Cylinder78")
+Cyn79 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder79")
+cylinder79 = Part.makeCylinder(2,40.3609,Base.Vector(33.5,232.5,92.5),Base.Vector(27,30,0),360)
+Cyn79.Shape = cylinder79
+Part.show(cylinder79)
+App.getDocument("test").removeObject("Cylinder79")
+Cyn80 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder80")
+cylinder80 = Part.makeCylinder(2,35.544,Base.Vector(38.75,183,-44.75),Base.Vector(18.75,-7.5,29.25),360)
+Cyn80.Shape = cylinder80
+Part.show(cylinder80)
+App.getDocument("test").removeObject("Cylinder80")
+Cyn81 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder81")
+cylinder81 = Part.makeCylinder(3.72344,23.7645,Base.Vector(44,111,55),Base.Vector(19.5,13.5,1.5),360)
+Cyn81.Shape = cylinder81
+Part.show(cylinder81)
+App.getDocument("test").removeObject("Cylinder81")
+Cyn82 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder82")
+cylinder82 = Part.makeCylinder(5,12.7279,Base.Vector(42.5,214.5,71.5),Base.Vector(9,-9,0),360)
+Cyn82.Shape = cylinder82
+Part.show(cylinder82)
+App.getDocument("test").removeObject("Cylinder82")
+Cyn83 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder83")
+cylinder83 = Part.makeCylinder(4.16203,47.244,Base.Vector(42.5,214.5,71.5),Base.Vector(30,36,6),360)
+Cyn83.Shape = cylinder83
+Part.show(cylinder83)
+App.getDocument("test").removeObject("Cylinder83")
+Cyn84 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder84")
+cylinder84 = Part.makeCylinder(2.7082,20.0686,Base.Vector(44,111,55),Base.Vector(19.5,-4.5,-1.5),360)
+Cyn84.Shape = cylinder84
+Part.show(cylinder84)
+App.getDocument("test").removeObject("Cylinder84")
+Cyn85 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder85")
+cylinder85 = Part.makeCylinder(2.00363,29.5085,Base.Vector(44,111,55),Base.Vector(-7.5,-28.5,-1.5),360)
+Cyn85.Shape = cylinder85
+Part.show(cylinder85)
+App.getDocument("test").removeObject("Cylinder85")
+Cyn86 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder86")
+cylinder86 = Part.makeCylinder(2.29412,25.0998,Base.Vector(51.5,205.5,71.5),Base.Vector(9,-15,18),360)
+Cyn86.Shape = cylinder86
+Part.show(cylinder86)
+App.getDocument("test").removeObject("Cylinder86")
+Cyn87 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder87")
+cylinder87 = Part.makeCylinder(5,37.8583,Base.Vector(51.5,205.5,71.5),Base.Vector(7.5,-36,-9),360)
+Cyn87.Shape = cylinder87
+Part.show(cylinder87)
+App.getDocument("test").removeObject("Cylinder87")
+Cyn88 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder88")
+cylinder88 = Part.makeCylinder(2,10.0343,Base.Vector(50.75,180.75,-10.25),Base.Vector(6.75,-5.25,-5.25),360)
+Cyn88.Shape = cylinder88
+Part.show(cylinder88)
+App.getDocument("test").removeObject("Cylinder88")
+Cyn89 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder89")
+cylinder89 = Part.makeCylinder(2,74.0756,Base.Vector(50.75,180.75,-10.25),Base.Vector(8.25,-11.25,72.75),360)
+Cyn89.Shape = cylinder89
+Part.show(cylinder89)
+App.getDocument("test").removeObject("Cylinder89")
+Cyn90 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder90")
+cylinder90 = Part.makeCylinder(3.70565,34.2381,Base.Vector(59,169.5,62.5),Base.Vector(1.5,21,27),360)
+Cyn90.Shape = cylinder90
+Part.show(cylinder90)
+App.getDocument("test").removeObject("Cylinder90")
+Cyn91 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder91")
+cylinder91 = Part.makeCylinder(2,45.05,Base.Vector(57.5,175.5,-15.5),Base.Vector(10.5,-34.5,-27),360)
+Cyn91.Shape = cylinder91
+Part.show(cylinder91)
+App.getDocument("test").removeObject("Cylinder91")
+Cyn92 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder92")
+cylinder92 = Part.makeCylinder(5,45.6207,Base.Vector(59,169.5,62.5),Base.Vector(4.5,-45,-6),360)
+Cyn92.Shape = cylinder92
+Part.show(cylinder92)
+App.getDocument("test").removeObject("Cylinder92")
+Cyn93 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder93")
+cylinder93 = Part.makeCylinder(2.56587,72.0625,Base.Vector(60.5,190.5,89.5),Base.Vector(0,72,3),360)
+Cyn93.Shape = cylinder93
+Part.show(cylinder93)
+App.getDocument("test").removeObject("Cylinder93")
+Cyn94 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder94")
+cylinder94 = Part.makeCylinder(5,24.9199,Base.Vector(63.5,106.5,53.5),Base.Vector(3,-24,-6),360)
+Cyn94.Shape = cylinder94
+Part.show(cylinder94)
+App.getDocument("test").removeObject("Cylinder94")
+Cyn95 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder95")
+cylinder95 = Part.makeCylinder(5,18.2483,Base.Vector(63.5,106.5,53.5),Base.Vector(0,18,3),360)
+Cyn95.Shape = cylinder95
+Part.show(cylinder95)
+App.getDocument("test").removeObject("Cylinder95")
+Cyn96 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder96")
+cylinder96 = Part.makeCylinder(2.24901,14.6969,Base.Vector(62,153,-48.5),Base.Vector(6,-12,6),360)
+Cyn96.Shape = cylinder96
+Part.show(cylinder96)
+App.getDocument("test").removeObject("Cylinder96")
+Cyn97 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder97")
+cylinder97 = Part.makeCylinder(2.19645,58.826,Base.Vector(68,141,-42.5),Base.Vector(1.5,-58.5,-6),360)
+Cyn97.Shape = cylinder97
+Part.show(cylinder97)
+App.getDocument("test").removeObject("Cylinder97")
+Cyn98 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder98")
+cylinder98 = Part.makeCylinder(2.17605,19.4422,Base.Vector(72.5,250.5,77.5),Base.Vector(-3,12,15),360)
+Cyn98.Shape = cylinder98
+Part.show(cylinder98)
+App.getDocument("test").removeObject("Cylinder98")
+Cyn99 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder99")
+cylinder99 = Part.makeCylinder(3.12689,14.6969,Base.Vector(72.5,250.5,77.5),Base.Vector(-6,12,-6),360)
+Cyn99.Shape = cylinder99
+Part.show(cylinder99)
+App.getDocument("test").removeObject("Cylinder99")
+Cyn100 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder100")
+cylinder100 = Part.makeCylinder(2,30.8869,Base.Vector(-14.5,144,-9.5),Base.Vector(0,15,-27),360)
+Cyn100.Shape = cylinder100
+Part.show(cylinder100)
+App.getDocument("test").removeObject("Cylinder100")
+Cyn101 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder101")
+cylinder101 = Part.makeCylinder(5,16.7705,Base.Vector(-11.5,196.5,65.5),Base.Vector(6,-15,4.5),360)
+Cyn101.Shape = cylinder101
+Part.show(cylinder101)
+App.getDocument("test").removeObject("Cylinder101")
+Cyn102 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder102")
+cylinder102 = Part.makeCylinder(2.42521,38.1395,Base.Vector(62,153,-48.5),Base.Vector(-23.25,30,3.75),360)
+Cyn102.Shape = cylinder102
+Part.show(cylinder102)
+App.getDocument("test").removeObject("Cylinder102")
+Cyn103 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder103")
+cylinder103 = Part.makeCylinder(2.49596,9,Base.Vector(60.5,262.5,92.5),Base.Vector(9,0,0),360)
+Cyn103.Shape = cylinder103
+Part.show(cylinder103)
+App.getDocument("test").removeObject("Cylinder103")
+Cyn104 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder104")
+cylinder104 = Part.makeCylinder(2,21.2132,Base.Vector(69.5,262.5,92.5),Base.Vector(-3,0,-21),360)
+Cyn104.Shape = cylinder104
+Part.show(cylinder104)
+App.getDocument("test").removeObject("Cylinder104")
+Cyn105 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder105")
+cylinder105 = Part.makeCylinder(2,66,Base.Vector(66.5,262.5,71.5),Base.Vector(-66,0,0),360)
+Cyn105.Shape = cylinder105
+Part.show(cylinder105)
+App.getDocument("test").removeObject("Cylinder105")
+Cyn106 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder106")
+cylinder106 = Part.makeCylinder(3.57592,12.3693,Base.Vector(0.5,262.5,71.5),Base.Vector(-12,0,3),360)
+Cyn106.Shape = cylinder106
+Part.show(cylinder106)
+App.getDocument("test").removeObject("Cylinder106")
+Cyn107 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder107")
+cylinder107 = Part.makeCylinder(3.92902,15,Base.Vector(-11.5,262.5,74.5),Base.Vector(-15,0,0),360)
+Cyn107.Shape = cylinder107
+Part.show(cylinder107)
+App.getDocument("test").removeObject("Cylinder107")
+Cyn108 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder108")
+cylinder108 = Part.makeCylinder(2,9.48683,Base.Vector(-26.5,262.5,74.5),Base.Vector(-9,0,-3),360)
+Cyn108.Shape = cylinder108
+Part.show(cylinder108)
+App.getDocument("test").removeObject("Cylinder108")
+Cyn109 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder109")
+cylinder109 = Part.makeCylinder(2,54.0833,Base.Vector(-35.5,262.5,86.5),Base.Vector(54,0,-3),360)
+Cyn109.Shape = cylinder109
+Part.show(cylinder109)
+App.getDocument("test").removeObject("Cylinder109")
+Cyn110 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder110")
+cylinder110 = Part.makeCylinder(2,12,Base.Vector(18.5,262.5,83.5),Base.Vector(12,0,0),360)
+Cyn110.Shape = cylinder110
+Part.show(cylinder110)
+App.getDocument("test").removeObject("Cylinder110")
+Cyn111 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder111")
+cylinder111 = Part.makeCylinder(2,31.3209,Base.Vector(30.5,262.5,83.5),Base.Vector(30,0,9),360)
+Cyn111.Shape = cylinder111
+Part.show(cylinder111)
+App.getDocument("test").removeObject("Cylinder111")
+Cyn112 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder112")
+cylinder112 = Part.makeCylinder(2,21.8403,Base.Vector(60.5,262.5,92.5),Base.Vector(6,0,-21),360)
+Cyn112.Shape = cylinder112
+Part.show(cylinder112)
+App.getDocument("test").removeObject("Cylinder112")
+Cyn113 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder113")
+cylinder113 = Part.makeCylinder(2,37.9473,Base.Vector(66.5,262.5,71.5),Base.Vector(-36,0,12),360)
+Cyn113.Shape = cylinder113
+Part.show(cylinder113)
+App.getDocument("test").removeObject("Cylinder113")
+Cyn114 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder114")
+cylinder114 = Part.makeCylinder(2,32.311,Base.Vector(30.5,262.5,83.5),Base.Vector(-30,0,-12),360)
+Cyn114.Shape = cylinder114
+Part.show(cylinder114)
+App.getDocument("test").removeObject("Cylinder114")
+Cyn115 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder115")
+cylinder115 = Part.makeCylinder(2,21.6333,Base.Vector(18.5,262.5,83.5),Base.Vector(-18,0,-12),360)
+Cyn115.Shape = cylinder115
+Part.show(cylinder115)
+App.getDocument("test").removeObject("Cylinder115")
+Cyn116 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder116")
+cylinder116 = Part.makeCylinder(2,31.3209,Base.Vector(18.5,262.5,83.5),Base.Vector(-30,0,-9),360)
+Cyn116.Shape = cylinder116
+Part.show(cylinder116)
+App.getDocument("test").removeObject("Cylinder116")
+Cyn117 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder117")
+cylinder117 = Part.makeCylinder(2,26.8328,Base.Vector(-11.5,262.5,74.5),Base.Vector(-24,0,12),360)
+Cyn117.Shape = cylinder117
+Part.show(cylinder117)
+App.getDocument("test").removeObject("Cylinder117")
+Cyn118 = FreeCAD.ActiveDocument.addObject("Part::Cylinder","Cylinder118")
+cylinder118 = Part.makeCylinder(2,15,Base.Vector(-26.5,262.5,74.5),Base.Vector(-9,0,12),360)
+Cyn118.Shape = cylinder118
+Part.show(cylinder118)
+App.getDocument("test").removeObject("Cylinder118")
 Sphere0 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere0")
-ball0 = Part.makeSphere(4.2,Base.Vector(-35.5,262.5,86.5),Base.Vector(0,0,1),-90,90,360)
+ball0 = Part.makeSphere(2)
+ball0.translate(Base.Vector(-35.5,262.5,86.5))
 Sphere0.Shape = ball0
+Part.show(ball0)
+App.getDocument("test").removeObject("Sphere0")
 Sphere1 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere1")
-ball1 = Part.makeSphere(4.2,Base.Vector(-35.5,262.5,71.5),Base.Vector(0,0,1),-90,90,360)
+ball1 = Part.makeSphere(2)
+ball1.translate(Base.Vector(-35.5,262.5,71.5))
 Sphere1.Shape = ball1
+Part.show(ball1)
+App.getDocument("test").removeObject("Sphere1")
 Sphere2 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere2")
-ball2 = Part.makeSphere(4.8164,Base.Vector(-32.5,241.5,92.5),Base.Vector(0,0,1),-90,90,360)
+ball2 = Part.makeSphere(2.29353)
+ball2.translate(Base.Vector(-32.5,241.5,92.5))
 Sphere2.Shape = ball2
+Part.show(ball2)
+App.getDocument("test").removeObject("Sphere2")
 Sphere3 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere3")
-ball3 = Part.makeSphere(4.78764,Base.Vector(-31.75,224.25,95.5),Base.Vector(0,0,1),-90,90,360)
+ball3 = Part.makeSphere(2.27983)
+ball3.translate(Base.Vector(-31.75,224.25,95.5))
 Sphere3.Shape = ball3
+Part.show(ball3)
+App.getDocument("test").removeObject("Sphere3")
 Sphere4 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere4")
-ball4 = Part.makeSphere(4.2,Base.Vector(-26.5,207,91),Base.Vector(0,0,1),-90,90,360)
+ball4 = Part.makeSphere(2)
+ball4.translate(Base.Vector(-26.5,207,91))
 Sphere4.Shape = ball4
+Part.show(ball4)
+App.getDocument("test").removeObject("Sphere4")
 Sphere5 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere5")
-ball5 = Part.makeSphere(6.66509,Base.Vector(-23.5,247.5,86.5),Base.Vector(0,0,1),-90,90,360)
+ball5 = Part.makeSphere(3.17385)
+ball5.translate(Base.Vector(-23.5,247.5,86.5))
 Sphere5.Shape = ball5
+Part.show(ball5)
+App.getDocument("test").removeObject("Sphere5")
 Sphere6 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere6")
-ball6 = Part.makeSphere(4.2,Base.Vector(-20.5,214.5,95.5),Base.Vector(0,0,1),-90,90,360)
+ball6 = Part.makeSphere(2)
+ball6.translate(Base.Vector(-20.5,214.5,95.5))
 Sphere6.Shape = ball6
+Part.show(ball6)
+App.getDocument("test").removeObject("Sphere6")
 Sphere7 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere7")
-ball7 = Part.makeSphere(4.2,Base.Vector(-11.5,225,91),Base.Vector(0,0,1),-90,90,360)
+ball7 = Part.makeSphere(2)
+ball7.translate(Base.Vector(-11.5,225,91))
 Sphere7.Shape = ball7
+Part.show(ball7)
+App.getDocument("test").removeObject("Sphere7")
 Sphere8 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere8")
-ball8 = Part.makeSphere(5.90381,Base.Vector(-3.25,198.75,92.5),Base.Vector(0,0,1),-90,90,360)
+ball8 = Part.makeSphere(2.81134)
+ball8.translate(Base.Vector(-3.25,198.75,92.5))
 Sphere8.Shape = ball8
+Part.show(ball8)
+App.getDocument("test").removeObject("Sphere8")
 Sphere9 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere9")
-ball9 = Part.makeSphere(10.5,Base.Vector(-20.5,211.5,71.5),Base.Vector(0,0,1),-90,90,360)
+ball9 = Part.makeSphere(5)
+ball9.translate(Base.Vector(-20.5,211.5,71.5))
 Sphere9.Shape = ball9
+Part.show(ball9)
+App.getDocument("test").removeObject("Sphere9")
 Sphere10 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere10")
-ball10 = Part.makeSphere(10.5,Base.Vector(-11.5,235.5,80.5),Base.Vector(0,0,1),-90,90,360)
+ball10 = Part.makeSphere(5)
+ball10.translate(Base.Vector(-11.5,235.5,80.5))
 Sphere10.Shape = ball10
+Part.show(ball10)
+App.getDocument("test").removeObject("Sphere10")
 Sphere11 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere11")
-ball11 = Part.makeSphere(8.25093,Base.Vector(-26.5,262.5,74.5),Base.Vector(0,0,1),-90,90,360)
+ball11 = Part.makeSphere(3.92902)
+ball11.translate(Base.Vector(-26.5,262.5,74.5))
 Sphere11.Shape = ball11
+Part.show(ball11)
+App.getDocument("test").removeObject("Sphere11")
 Sphere12 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere12")
-ball12 = Part.makeSphere(10.5,Base.Vector(-11.5,196.5,65.5),Base.Vector(0,0,1),-90,90,360)
+ball12 = Part.makeSphere(5)
+ball12.translate(Base.Vector(-11.5,196.5,65.5))
 Sphere12.Shape = ball12
+Part.show(ball12)
+App.getDocument("test").removeObject("Sphere12")
 Sphere13 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere13")
-ball13 = Part.makeSphere(4.2,Base.Vector(-17.5,121.5,32.5),Base.Vector(0,0,1),-90,90,360)
+ball13 = Part.makeSphere(2)
+ball13.translate(Base.Vector(-17.5,121.5,32.5))
 Sphere13.Shape = ball13
+Part.show(ball13)
+App.getDocument("test").removeObject("Sphere13")
 Sphere14 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere14")
-ball14 = Part.makeSphere(10.5,Base.Vector(-7.75,114,49.75),Base.Vector(0,0,1),-90,90,360)
+ball14 = Part.makeSphere(5)
+ball14.translate(Base.Vector(-7.75,114,49.75))
 Sphere14.Shape = ball14
+Part.show(ball14)
+App.getDocument("test").removeObject("Sphere14")
 Sphere15 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere15")
-ball15 = Part.makeSphere(9.36795,Base.Vector(-14.5,144,-9.5),Base.Vector(0,0,1),-90,90,360)
+ball15 = Part.makeSphere(4.46093)
+ball15.translate(Base.Vector(-14.5,144,-9.5))
 Sphere15.Shape = ball15
+Part.show(ball15)
+App.getDocument("test").removeObject("Sphere15")
 Sphere16 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere16")
-ball16 = Part.makeSphere(8.62283,Base.Vector(-12.25,165.75,34.75),Base.Vector(0,0,1),-90,90,360)
+ball16 = Part.makeSphere(4.10611)
+ball16.translate(Base.Vector(-12.25,165.75,34.75))
 Sphere16.Shape = ball16
+Part.show(ball16)
+App.getDocument("test").removeObject("Sphere16")
 Sphere17 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere17")
-ball17 = Part.makeSphere(8.14872,Base.Vector(-14.5,133.5,-18.5),Base.Vector(0,0,1),-90,90,360)
+ball17 = Part.makeSphere(3.88034)
+ball17.translate(Base.Vector(-14.5,133.5,-18.5))
 Sphere17.Shape = ball17
+Part.show(ball17)
+App.getDocument("test").removeObject("Sphere17")
 Sphere18 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere18")
-ball18 = Part.makeSphere(10.4969,Base.Vector(-11.5,97.5,-42.5),Base.Vector(0,0,1),-90,90,360)
+ball18 = Part.makeSphere(4.99853)
+ball18.translate(Base.Vector(-11.5,97.5,-42.5))
 Sphere18.Shape = ball18
+Part.show(ball18)
+App.getDocument("test").removeObject("Sphere18")
 Sphere19 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere19")
-ball19 = Part.makeSphere(4.57795,Base.Vector(-14.5,144,-34.25),Base.Vector(0,0,1),-90,90,360)
+ball19 = Part.makeSphere(2.17998)
+ball19.translate(Base.Vector(-14.5,144,-34.25))
 Sphere19.Shape = ball19
+Part.show(ball19)
+App.getDocument("test").removeObject("Sphere19")
 Sphere20 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere20")
-ball20 = Part.makeSphere(4.2,Base.Vector(12.5,115.5,-45.5),Base.Vector(0,0,1),-90,90,360)
+ball20 = Part.makeSphere(2)
+ball20.translate(Base.Vector(12.5,115.5,-45.5))
 Sphere20.Shape = ball20
+Part.show(ball20)
+App.getDocument("test").removeObject("Sphere20")
 Sphere21 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere21")
-ball21 = Part.makeSphere(4.57795,Base.Vector(-14.5,159,-36.5),Base.Vector(0,0,1),-90,90,360)
+ball21 = Part.makeSphere(2.17998)
+ball21.translate(Base.Vector(-14.5,159,-36.5))
 Sphere21.Shape = ball21
+Part.show(ball21)
+App.getDocument("test").removeObject("Sphere21")
 Sphere22 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere22")
-ball22 = Part.makeSphere(9.36795,Base.Vector(-14.5,166.5,14.5),Base.Vector(0,0,1),-90,90,360)
+ball22 = Part.makeSphere(4.46093)
+ball22.translate(Base.Vector(-14.5,166.5,14.5))
 Sphere22.Shape = ball22
+Part.show(ball22)
+App.getDocument("test").removeObject("Sphere22")
 Sphere23 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere23")
-ball23 = Part.makeSphere(7.90529,Base.Vector(-2.5,195,5.5),Base.Vector(0,0,1),-90,90,360)
+ball23 = Part.makeSphere(3.76443)
+ball23.translate(Base.Vector(-2.5,195,5.5))
 Sphere23.Shape = ball23
+Part.show(ball23)
+App.getDocument("test").removeObject("Sphere23")
 Sphere24 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere24")
-ball24 = Part.makeSphere(10.4969,Base.Vector(-14.5,82.5,-45.5),Base.Vector(0,0,1),-90,90,360)
+ball24 = Part.makeSphere(4.99853)
+ball24.translate(Base.Vector(-14.5,82.5,-45.5))
 Sphere24.Shape = ball24
+Part.show(ball24)
+App.getDocument("test").removeObject("Sphere24")
 Sphere25 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere25")
-ball25 = Part.makeSphere(10.5,Base.Vector(-11.5,163.5,53.5),Base.Vector(0,0,1),-90,90,360)
+ball25 = Part.makeSphere(5)
+ball25.translate(Base.Vector(-11.5,163.5,53.5))
 Sphere25.Shape = ball25
+Part.show(ball25)
+App.getDocument("test").removeObject("Sphere25")
 Sphere26 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere26")
-ball26 = Part.makeSphere(10.5,Base.Vector(-8.5,130.5,56.5),Base.Vector(0,0,1),-90,90,360)
+ball26 = Part.makeSphere(5)
+ball26.translate(Base.Vector(-8.5,130.5,56.5))
 Sphere26.Shape = ball26
+Part.show(ball26)
+App.getDocument("test").removeObject("Sphere26")
 Sphere27 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere27")
-ball27 = Part.makeSphere(10.5,Base.Vector(-5.5,181.5,70),Base.Vector(0,0,1),-90,90,360)
+ball27 = Part.makeSphere(5)
+ball27.translate(Base.Vector(-5.5,181.5,70))
 Sphere27.Shape = ball27
+Part.show(ball27)
+App.getDocument("test").removeObject("Sphere27")
 Sphere28 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere28")
-ball28 = Part.makeSphere(5.35953,Base.Vector(23,195,-32),Base.Vector(0,0,1),-90,90,360)
+ball28 = Part.makeSphere(2.55216)
+ball28.translate(Base.Vector(23,195,-32))
 Sphere28.Shape = ball28
+Part.show(ball28)
+App.getDocument("test").removeObject("Sphere28")
 Sphere29 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere29")
-ball29 = Part.makeSphere(7.2185,Base.Vector(0.5,198,35.5),Base.Vector(0,0,1),-90,90,360)
+ball29 = Part.makeSphere(3.43738)
+ball29.translate(Base.Vector(0.5,198,35.5))
 Sphere29.Shape = ball29
+Part.show(ball29)
+App.getDocument("test").removeObject("Sphere29")
 Sphere30 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere30")
-ball30 = Part.makeSphere(10.5,Base.Vector(15.5,200.25,40),Base.Vector(0,0,1),-90,90,360)
+ball30 = Part.makeSphere(5)
+ball30.translate(Base.Vector(15.5,200.25,40))
 Sphere30.Shape = ball30
+Part.show(ball30)
+App.getDocument("test").removeObject("Sphere30")
 Sphere31 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere31")
-ball31 = Part.makeSphere(10.5,Base.Vector(-11.5,262.5,74.5),Base.Vector(0,0,1),-90,90,360)
+ball31 = Part.makeSphere(5)
+ball31.translate(Base.Vector(-11.5,262.5,74.5))
 Sphere31.Shape = ball31
+Part.show(ball31)
+App.getDocument("test").removeObject("Sphere31")
 Sphere32 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere32")
-ball32 = Part.makeSphere(6.12959,Base.Vector(24.5,112.5,56.5),Base.Vector(0,0,1),-90,90,360)
+ball32 = Part.makeSphere(2.91885)
+ball32.translate(Base.Vector(24.5,112.5,56.5))
 Sphere32.Shape = ball32
+Part.show(ball32)
+App.getDocument("test").removeObject("Sphere32")
 Sphere33 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere33")
-ball33 = Part.makeSphere(10.4774,Base.Vector(-2.5,103.5,53.5),Base.Vector(0,0,1),-90,90,360)
+ball33 = Part.makeSphere(4.98922)
+ball33.translate(Base.Vector(-2.5,103.5,53.5))
 Sphere33.Shape = ball33
+Part.show(ball33)
+App.getDocument("test").removeObject("Sphere33")
 Sphere34 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere34")
-ball34 = Part.makeSphere(4.87842,Base.Vector(9.5,199.5,62.5),Base.Vector(0,0,1),-90,90,360)
+ball34 = Part.makeSphere(2.32306)
+ball34.translate(Base.Vector(9.5,199.5,62.5))
 Sphere34.Shape = ball34
+Part.show(ball34)
+App.getDocument("test").removeObject("Sphere34")
 Sphere35 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere35")
-ball35 = Part.makeSphere(6.16019,Base.Vector(3.5,184.5,88),Base.Vector(0,0,1),-90,90,360)
+ball35 = Part.makeSphere(2.93342)
+ball35.translate(Base.Vector(3.5,184.5,88))
 Sphere35.Shape = ball35
+Part.show(ball35)
+App.getDocument("test").removeObject("Sphere35")
 Sphere36 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere36")
-ball36 = Part.makeSphere(9.76128,Base.Vector(-8.5,82.5,44.5),Base.Vector(0,0,1),-90,90,360)
+ball36 = Part.makeSphere(4.64823)
+ball36.translate(Base.Vector(-8.5,82.5,44.5))
 Sphere36.Shape = ball36
+Part.show(ball36)
+App.getDocument("test").removeObject("Sphere36")
 Sphere37 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere37")
-ball37 = Part.makeSphere(10.5,Base.Vector(18.5,229.5,73),Base.Vector(0,0,1),-90,90,360)
+ball37 = Part.makeSphere(5)
+ball37.translate(Base.Vector(18.5,229.5,73))
 Sphere37.Shape = ball37
+Part.show(ball37)
+App.getDocument("test").removeObject("Sphere37")
 Sphere38 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere38")
-ball38 = Part.makeSphere(8.35784,Base.Vector(14.75,199.5,19.375),Base.Vector(0,0,1),-90,90,360)
+ball38 = Part.makeSphere(3.97992)
+ball38.translate(Base.Vector(14.75,199.5,19.375))
 Sphere38.Shape = ball38
+Part.show(ball38)
+App.getDocument("test").removeObject("Sphere38")
 Sphere39 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere39")
-ball39 = Part.makeSphere(4.70689,Base.Vector(12.5,217.5,92.5),Base.Vector(0,0,1),-90,90,360)
+ball39 = Part.makeSphere(2.24137)
+ball39.translate(Base.Vector(12.5,217.5,92.5))
 Sphere39.Shape = ball39
+Part.show(ball39)
+App.getDocument("test").removeObject("Sphere39")
 Sphere40 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere40")
-ball40 = Part.makeSphere(10.5,Base.Vector(30.5,199.5,59.5),Base.Vector(0,0,1),-90,90,360)
+ball40 = Part.makeSphere(5)
+ball40.translate(Base.Vector(30.5,199.5,59.5))
 Sphere40.Shape = ball40
+Part.show(ball40)
+App.getDocument("test").removeObject("Sphere40")
 Sphere41 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere41")
-ball41 = Part.makeSphere(10.5,Base.Vector(30.5,223.5,71.5),Base.Vector(0,0,1),-90,90,360)
+ball41 = Part.makeSphere(5)
+ball41.translate(Base.Vector(30.5,223.5,71.5))
 Sphere41.Shape = ball41
+Part.show(ball41)
+App.getDocument("test").removeObject("Sphere41")
 Sphere42 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere42")
-ball42 = Part.makeSphere(5.09295,Base.Vector(62,153,-48.5),Base.Vector(0,0,1),-90,90,360)
+ball42 = Part.makeSphere(2.42521)
+ball42.translate(Base.Vector(62,153,-48.5))
 Sphere42.Shape = ball42
+Part.show(ball42)
+App.getDocument("test").removeObject("Sphere42")
 Sphere43 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere43")
-ball43 = Part.makeSphere(4.2,Base.Vector(24.5,223.5,92.5),Base.Vector(0,0,1),-90,90,360)
+ball43 = Part.makeSphere(2)
+ball43.translate(Base.Vector(24.5,223.5,92.5))
 Sphere43.Shape = ball43
+Part.show(ball43)
+App.getDocument("test").removeObject("Sphere43")
 Sphere44 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere44")
-ball44 = Part.makeSphere(4.81589,Base.Vector(15.5,232.5,91),Base.Vector(0,0,1),-90,90,360)
+ball44 = Part.makeSphere(2.29328)
+ball44.translate(Base.Vector(15.5,232.5,91))
 Sphere44.Shape = ball44
+Part.show(ball44)
+App.getDocument("test").removeObject("Sphere44")
 Sphere45 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere45")
-ball45 = Part.makeSphere(6.77952,Base.Vector(30.5,190.5,2.5),Base.Vector(0,0,1),-90,90,360)
+ball45 = Part.makeSphere(3.22834)
+ball45.translate(Base.Vector(30.5,190.5,2.5))
 Sphere45.Shape = ball45
+Part.show(ball45)
+App.getDocument("test").removeObject("Sphere45")
 Sphere46 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere46")
-ball46 = Part.makeSphere(4.57268,Base.Vector(21.5,246,88),Base.Vector(0,0,1),-90,90,360)
+ball46 = Part.makeSphere(2.17746)
+ball46.translate(Base.Vector(21.5,246,88))
 Sphere46.Shape = ball46
+Part.show(ball46)
+App.getDocument("test").removeObject("Sphere46")
 Sphere47 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere47")
-ball47 = Part.makeSphere(8.38224,Base.Vector(0.5,262.5,71.5),Base.Vector(0,0,1),-90,90,360)
+ball47 = Part.makeSphere(3.99154)
+ball47.translate(Base.Vector(0.5,262.5,71.5))
 Sphere47.Shape = ball47
+Part.show(ball47)
+App.getDocument("test").removeObject("Sphere47")
 Sphere48 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere48")
-ball48 = Part.makeSphere(4.2,Base.Vector(33.5,232.5,92.5),Base.Vector(0,0,1),-90,90,360)
+ball48 = Part.makeSphere(2)
+ball48.translate(Base.Vector(33.5,232.5,92.5))
 Sphere48.Shape = ball48
+Part.show(ball48)
+App.getDocument("test").removeObject("Sphere48")
 Sphere49 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere49")
-ball49 = Part.makeSphere(4.2,Base.Vector(30.5,262.5,83.5),Base.Vector(0,0,1),-90,90,360)
+ball49 = Part.makeSphere(2)
+ball49.translate(Base.Vector(30.5,262.5,83.5))
 Sphere49.Shape = ball49
+Part.show(ball49)
+App.getDocument("test").removeObject("Sphere49")
 Sphere50 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere50")
-ball50 = Part.makeSphere(4.2,Base.Vector(18.5,262.5,83.5),Base.Vector(0,0,1),-90,90,360)
+ball50 = Part.makeSphere(2)
+ball50.translate(Base.Vector(18.5,262.5,83.5))
 Sphere50.Shape = ball50
+Part.show(ball50)
+App.getDocument("test").removeObject("Sphere50")
 Sphere51 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere51")
-ball51 = Part.makeSphere(7.81923,Base.Vector(44,111,55),Base.Vector(0,0,1),-90,90,360)
+ball51 = Part.makeSphere(3.72344)
+ball51.translate(Base.Vector(44,111,55))
 Sphere51.Shape = ball51
+Part.show(ball51)
+App.getDocument("test").removeObject("Sphere51")
 Sphere52 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere52")
-ball52 = Part.makeSphere(4.71565,Base.Vector(33.5,190.5,-24.5),Base.Vector(0,0,1),-90,90,360)
+ball52 = Part.makeSphere(2.24555)
+ball52.translate(Base.Vector(33.5,190.5,-24.5))
 Sphere52.Shape = ball52
+Part.show(ball52)
+App.getDocument("test").removeObject("Sphere52")
 Sphere53 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere53")
-ball53 = Part.makeSphere(5.35953,Base.Vector(38.75,183,-44.75),Base.Vector(0,0,1),-90,90,360)
+ball53 = Part.makeSphere(2.55216)
+ball53.translate(Base.Vector(38.75,183,-44.75))
 Sphere53.Shape = ball53
+Part.show(ball53)
+App.getDocument("test").removeObject("Sphere53")
 Sphere54 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere54")
-ball54 = Part.makeSphere(4.2,Base.Vector(50.75,180.75,-10.25),Base.Vector(0,0,1),-90,90,360)
+ball54 = Part.makeSphere(2)
+ball54.translate(Base.Vector(50.75,180.75,-10.25))
 Sphere54.Shape = ball54
+Part.show(ball54)
+App.getDocument("test").removeObject("Sphere54")
 Sphere55 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere55")
-ball55 = Part.makeSphere(10.5,Base.Vector(42.5,214.5,71.5),Base.Vector(0,0,1),-90,90,360)
+ball55 = Part.makeSphere(5)
+ball55.translate(Base.Vector(42.5,214.5,71.5))
 Sphere55.Shape = ball55
+Part.show(ball55)
+App.getDocument("test").removeObject("Sphere55")
 Sphere56 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere56")
-ball56 = Part.makeSphere(5.38833,Base.Vector(60.5,262.5,92.5),Base.Vector(0,0,1),-90,90,360)
+ball56 = Part.makeSphere(2.56587)
+ball56.translate(Base.Vector(60.5,262.5,92.5))
 Sphere56.Shape = ball56
+Part.show(ball56)
+App.getDocument("test").removeObject("Sphere56")
 Sphere57 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere57")
-ball57 = Part.makeSphere(4.2,Base.Vector(57.5,175.5,-15.5),Base.Vector(0,0,1),-90,90,360)
+ball57 = Part.makeSphere(2)
+ball57.translate(Base.Vector(57.5,175.5,-15.5))
 Sphere57.Shape = ball57
+Part.show(ball57)
+App.getDocument("test").removeObject("Sphere57")
 Sphere58 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere58")
-ball58 = Part.makeSphere(10.5,Base.Vector(63.5,124.5,56.5),Base.Vector(0,0,1),-90,90,360)
+ball58 = Part.makeSphere(5)
+ball58.translate(Base.Vector(63.5,124.5,56.5))
 Sphere58.Shape = ball58
+Part.show(ball58)
+App.getDocument("test").removeObject("Sphere58")
 Sphere59 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere59")
-ball59 = Part.makeSphere(10.5,Base.Vector(51.5,205.5,71.5),Base.Vector(0,0,1),-90,90,360)
+ball59 = Part.makeSphere(5)
+ball59.translate(Base.Vector(51.5,205.5,71.5))
 Sphere59.Shape = ball59
+Part.show(ball59)
+App.getDocument("test").removeObject("Sphere59")
 Sphere60 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere60")
-ball60 = Part.makeSphere(8.74027,Base.Vector(72.5,250.5,77.5),Base.Vector(0,0,1),-90,90,360)
+ball60 = Part.makeSphere(4.16203)
+ball60.translate(Base.Vector(72.5,250.5,77.5))
 Sphere60.Shape = ball60
+Part.show(ball60)
+App.getDocument("test").removeObject("Sphere60")
 Sphere61 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere61")
-ball61 = Part.makeSphere(10.5,Base.Vector(63.5,106.5,53.5),Base.Vector(0,0,1),-90,90,360)
+ball61 = Part.makeSphere(5)
+ball61.translate(Base.Vector(63.5,106.5,53.5))
 Sphere61.Shape = ball61
+Part.show(ball61)
+App.getDocument("test").removeObject("Sphere61")
 Sphere62 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere62")
-ball62 = Part.makeSphere(4.20762,Base.Vector(36.5,82.5,53.5),Base.Vector(0,0,1),-90,90,360)
+ball62 = Part.makeSphere(2.00363)
+ball62.translate(Base.Vector(36.5,82.5,53.5))
 Sphere62.Shape = ball62
+Part.show(ball62)
+App.getDocument("test").removeObject("Sphere62")
 Sphere63 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere63")
-ball63 = Part.makeSphere(7.78187,Base.Vector(60.5,190.5,89.5),Base.Vector(0,0,1),-90,90,360)
+ball63 = Part.makeSphere(3.70565)
+ball63.translate(Base.Vector(60.5,190.5,89.5))
 Sphere63.Shape = ball63
+Part.show(ball63)
+App.getDocument("test").removeObject("Sphere63")
 Sphere64 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere64")
-ball64 = Part.makeSphere(10.5,Base.Vector(59,169.5,62.5),Base.Vector(0,0,1),-90,90,360)
+ball64 = Part.makeSphere(5)
+ball64.translate(Base.Vector(59,169.5,62.5))
 Sphere64.Shape = ball64
+Part.show(ball64)
+App.getDocument("test").removeObject("Sphere64")
 Sphere65 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere65")
-ball65 = Part.makeSphere(4.72292,Base.Vector(68,141,-42.5),Base.Vector(0,0,1),-90,90,360)
+ball65 = Part.makeSphere(2.24901)
+ball65.translate(Base.Vector(68,141,-42.5))
 Sphere65.Shape = ball65
+Part.show(ball65)
+App.getDocument("test").removeObject("Sphere65")
 Sphere66 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere66")
-ball66 = Part.makeSphere(10.5,Base.Vector(66.5,82.5,47.5),Base.Vector(0,0,1),-90,90,360)
+ball66 = Part.makeSphere(5)
+ball66.translate(Base.Vector(66.5,82.5,47.5))
 Sphere66.Shape = ball66
+Part.show(ball66)
+App.getDocument("test").removeObject("Sphere66")
 Sphere67 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere67")
-ball67 = Part.makeSphere(4.61255,Base.Vector(69.5,82.5,-48.5),Base.Vector(0,0,1),-90,90,360)
+ball67 = Part.makeSphere(2.19645)
+ball67.translate(Base.Vector(69.5,82.5,-48.5))
 Sphere67.Shape = ball67
+Part.show(ball67)
+App.getDocument("test").removeObject("Sphere67")
 Sphere68 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere68")
-ball68 = Part.makeSphere(5.24151,Base.Vector(69.5,262.5,92.5),Base.Vector(0,0,1),-90,90,360)
+ball68 = Part.makeSphere(2.49596)
+ball68.translate(Base.Vector(69.5,262.5,92.5))
 Sphere68.Shape = ball68
+Part.show(ball68)
+App.getDocument("test").removeObject("Sphere68")
 Sphere69 = FreeCAD.ActiveDocument.addObject("Part::Sphere","Sphere69")
-ball69 = Part.makeSphere(6.56648,Base.Vector(66.5,262.5,71.5),Base.Vector(0,0,1),-90,90,360)
+ball69 = Part.makeSphere(3.12689)
+ball69.translate(Base.Vector(66.5,262.5,71.5))
 Sphere69.Shape = ball69
+Part.show(ball69)
+App.getDocument("test").removeObject("Sphere69")
+Gui.SendMsgToActiveView("ViewFit")
 
