@@ -10,7 +10,7 @@ const Eigen::Vector3d DIR(0., 0., 1.);
 
 namespace Rotation3d{
 // computation operators //
-Eigen::MatrixXd rotationX(double alpha_x){
+Eigen::MatrixXd rotationX(const double alpha_x){
 	Eigen::MatrixXd Rx(3,3);
 	Rx(0,0) = 1.; 			 Rx(0,1) = 0.; 		      Rx(0,2) = 0.;
 	Rx(1,0) = 0.; 			 Rx(1,1) =  cos(alpha_x); Rx(1,2) = -sin(alpha_x);
@@ -18,7 +18,7 @@ Eigen::MatrixXd rotationX(double alpha_x){
 	//std::cout << "Rx = " << Rx << std::endl;
 	return Rx;
 }
-Eigen::MatrixXd rotationY(double alpha_y){
+Eigen::MatrixXd rotationY(const double alpha_y){
 	Eigen::MatrixXd Ry(3,3);
 	Ry(0,0) =  cos(alpha_y); Ry(0,1) = 0.; 		      Ry(0,2) = +sin(alpha_y);
 	Ry(1,0) = 0.; 			 Ry(1,1) = 1.; 		      Ry(1,2) = 0.;
@@ -26,7 +26,7 @@ Eigen::MatrixXd rotationY(double alpha_y){
 	//std::cout << "Ry = " << Ry << std::endl;
 	return Ry;
 }
-Eigen::MatrixXd rotationZ(double alpha_z){
+Eigen::MatrixXd rotationZ(const double alpha_z){
 	Eigen::MatrixXd Rz(3,3);
 	Rz(0,0) =  cos(alpha_z); Rz(0,1) = -sin(alpha_z); Rz(0,2) = 0.;
 	Rz(1,0) = +sin(alpha_z); Rz(1,1) =  cos(alpha_z); Rz(1,2) = 0.;
@@ -35,7 +35,8 @@ Eigen::MatrixXd rotationZ(double alpha_z){
 	return Rz;
 }
 // rotate vec2 to be in the same direction of vec1
-Eigen::MatrixXd rotationMatrix(Eigen::Vector3d vec1, Eigen::Vector3d vec2){
+Eigen::MatrixXd rotationMatrix(const Eigen::Vector3d& vec1, const Eigen::Vector3d& vec2,
+			       Eigen::Matrix3d& R){
 	// find the rotation axis:
 	Eigen::Vector3d axis;
 	axis = vec2.cross(vec1)/(vec2.cross(vec1)).norm();
@@ -45,8 +46,7 @@ Eigen::MatrixXd rotationMatrix(Eigen::Vector3d vec1, Eigen::Vector3d vec2){
 	double angle = acos(vec2.dot(vec1)/vec2.norm()/vec1.norm());
 
 	// determine rotation matrix R
-	Eigen::Matrix3d R;
-	Eigen::Matrix3d I = Eigen::Matrix3d::Identity();
+	const Eigen::Matrix3d I = Eigen::Matrix3d::Identity();
 	if(angle < 1e-6){
 		R = I;
 	}else{
