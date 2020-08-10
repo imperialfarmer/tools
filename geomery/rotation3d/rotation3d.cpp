@@ -3,8 +3,8 @@
 
 extern Parameter par;
 
-const double RAD = 180./3.1415926;
-const double PI = 3.1415926;
+const double RAD = 180./M_PI;
+const double PI = M_PI;
 // default vector
 const Eigen::Vector3d DIR(0., 0., 1.);
 
